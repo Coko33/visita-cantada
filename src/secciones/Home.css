@@ -2,14 +2,36 @@
   position: relative;
   top: 40px;
   width: 100%;
-  height: 200px;
+  height: 1000px;
 }
 
 .salaArana__containerImg {
-  position: relative;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 100px;
   left: 12.5%;
   width: 37.5%;
+}
+
+.salaAraña__letrasGigantes {
+  position: absolute;
+  width: 62.5%;
+  height: 100%;
+  left: 37.5%;
+  top: 120px;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.salaAraña__letrasGigantes h3 {
+  line-height: 90px;
+  margin: 0;
+  font-size: 170px;
+  color: white;
+  opacity: 0.1;
+  white-space: nowrap;
 }
 
 .salaArana__img {
@@ -18,14 +40,84 @@
   width: 100%;
 }
 
-.lidiaBordaLoop {
+.salaArana__containerTitulo {
   position: absolute;
-  top: 200px;
-  left: 37.5%;
+  width: 220px;
+  height: 50px;
+}
+
+.salaArana__titulo {
+  display: block;
+  position: absolute;
+  margin: 0;
+  color: white;
+  font-family: BrlwSC_Bold;
+  font-size: 50px;
+  line-height: 50px;
+  width: 100%;
+}
+
+.salaArana__titulo--columnas {
+  bottom: -10%;
+  right: -105%;
+}
+
+.salaArana__subrayTitulo {
+  position: absolute;
+  height: 4px;
+  background-color: white;
+  width: 50%;
+  bottom: -6px;
+}
+
+.salaArana__subrayTitulo--columnas {
+  bottom: calc(-10% + 6px);
+  left: 0;
+  width: 30%;
+}
+
+.salaArana__imgSalaColumnas {
+  position: absolute;
+  width: 33.3%;
+  left: 166.6%;
+  top: 100%;
+}
+
+/*videos*/
+.videoHome {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25%;
+  z-index: 1000;
+}
+
+.videoHome video {
   -webkit-filter: none;
   filter: none;
-  -webkit-filter: none;
   border-radius: 0;
   box-shadow: none;
+}
+
+.videoHome h2 {
+  display: block;
+  position: absolute;
+  color: #fff;
+  background-color: #000;
+  line-height: 26px;
+  padding: 0 5px 3px 5px;
+}
+
+/*video lidiaBorda*/
+.videoHome--lidiaBorda {
+  width: 75%;
+  top: 8%;
+  left: 66.6%;
+}
+/*video noeliaMoncada*/
+.videoHome--noeliaMoncada {
+  width: 66.8%;
+  top: 85%;
+  left: 33.3%;
 }

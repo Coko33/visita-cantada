@@ -1,3 +1,6 @@
+h2 {
+  display: none;
+}
 .tituloContainer {
   position: relative;
   box-sizing: border-box;
@@ -27,18 +30,8 @@
 
 .videoIntro {
   width: 100%;
-
-  /*-brillo*/
-  /*   -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-         */
-  /*blur*/
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
-
-  /*sepia*/
   -webkit-filter: grayscale(100%) blur(2px);
-
+  filter: grayscale(100%) blur(2px);
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(0, 0, 0);
 }
