@@ -1,0 +1,31 @@
+.salaArana {
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: 200px;
+}
+
+.salaArana__containerImg {
+  position: relative;
+  top: 100px;
+  left: 12.5%;
+  width: 37.5%;
+}
+
+.salaArana__img {
+  /* -webkit-filter: brightness(20%); */
+  filter: brightness(60%) contrast(180%);
+  width: 100%;
+}
+
+.lidiaBordaLoop {
+  position: absolute;
+  top: 200px;
+  left: 37.5%;
+  width: 25%;
+  -webkit-filter: none;
+  filter: none;
+  -webkit-filter: none;
+  border-radius: 0;
+  box-shadow: none;
+}

@@ -1,13 +1,81 @@
+@font-face {
+  font-family: "Brlw_BoldItalic";
+  font-weight: "bold";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/Barlow-BoldItalic_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwC_Regular";
+  font-weight: "regular";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowCondensed-Regular_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwSC_Black";
+  font-weight: "black";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowSemiCondensed-Black_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwSC_BlackItalic";
+  font-weight: "black";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowSemiCondensed-BlackItalic_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwSC_Bold";
+  font-weight: "bold";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowSemiCondensed-Bold_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwSC_BoldItalic";
+  font-weight: "bold";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowSemiCondensed-BoldItalic_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwSC_ExtraBold";
+  font-weight: "extraBold";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowSemiCondensed-ExtraBold_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwSC_Light";
+  font-weight: "light";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowSemiCondensed-Light_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwSC_LightItalic";
+  font-weight: "light";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowSemiCondensed-LightItalic_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwSC_Regular";
+  font-weight: "regular";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowSemiCondensed-Regular_Manzana.woff) format("woff");
+}
+@font-face {
+  font-family: "BrlwSC_ThinItalic";
+  font-weight: "thin";
+  src: local("Helvetica Neue LT Std"),
+    url(./fuentes/BarlowSemiCondensed-ThinItalic_Manzana.woff) format("woff");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
