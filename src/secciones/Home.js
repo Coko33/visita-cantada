@@ -32,7 +32,7 @@ export default function Home() {
             }
             clase={"videoHome videoHome--lidiaBorda"}
             titulo={"Lidia Borda"}
-            linkTo={"/lidiaBorda"}
+            linkTo={"/salaArana"}
           ></VideoWraper>
           <VideoWraper
             source1={
@@ -40,7 +40,7 @@ export default function Home() {
             }
             clase={"videoHome videoHome--noeliaMoncada"}
             titulo={"Noelia Moncada"}
-            linkTo={"/noeliaMoncada"}
+            linkTo={"/salaArana"}
           ></VideoWraper>
           <h2 className="salaArana__titulo salaArana__titulo--columnas">
             Sala Columnas

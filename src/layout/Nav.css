@@ -2,8 +2,13 @@ ul li {
   list-style: none;
 }
 
+.navBar {
+  height: 0;
+  background: #666666;
+}
+
 .navBar__menu {
-  top: 40px;
+  /*   top: 40px; */
   position: relative;
   padding: 0 10px;
   width: 970px;

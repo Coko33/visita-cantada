@@ -48,7 +48,7 @@
   color: white;
   text-align: center;
   opacity: 0;
-  animation: aparecer 3s ease-in-out 7s infinite;
+  animation: aparecer 3s ease-in-out 3s infinite;
 }
 
 .intro__tituloContainer h2:hover {

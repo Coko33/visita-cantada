@@ -13,8 +13,7 @@ import {
   Link,
   Router,
 } from "react-router-dom";
-import LidiaBorda from "./secciones/LidiaBorda";
-import NoeliaMoncada from "./secciones/NoeliaMoncada";
+import SalaArana from "./secciones/SalaArana";
 
 function App() {
   return (
@@ -35,23 +34,23 @@ function App() {
           ></Route>
           <Route
             exact
-            path="/lidiaBorda"
+            path="/salaArana"
             element={
               <>
                 <Header />
                 <Nav />
-                <LidiaBorda />
+                <SalaArana />
               </>
             }
           ></Route>
           <Route
             exact
-            path="/noeliaMoncada"
+            path="/salaArana"
             element={
               <>
                 <Header />
                 <Nav />
-                <NoeliaMoncada />
+                <SalaArana />
               </>
             }
           ></Route>
