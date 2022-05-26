@@ -32,6 +32,7 @@ export default function Home() {
             }
             clase={"videoHome videoHome--lidiaBorda"}
             titulo={"Lidia Borda"}
+            linkTo={"lidiaBorda"}
           ></VideoWraper>
           <VideoWraper
             source1={

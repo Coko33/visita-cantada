@@ -1,7 +1,8 @@
-h2 {
+.videoIntro h2 {
   display: none;
 }
-.tituloContainer {
+
+.intro__tituloContainer {
   position: relative;
   box-sizing: border-box;
   width: 90%;
@@ -9,18 +10,53 @@ h2 {
   top: calc(50% - 37px);
   /* border: solid 4px white; */
   border: none;
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.tituloContainer h1 {
+.intro__tituloContainer h1 {
   color: white;
   text-align: center;
   font-size: 50px;
   font-family: BrlwSC_Light;
   margin: 0;
+  background-color: black;
 }
 
-.videoContainer {
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+
+.intro__tituloContainer h2 {
+  position: relative;
+  margin: 6px auto;
+  padding: 0 15px 5px 15px;
+  display: block;
+  font-family: BrlwSC_Light;
+  font-size: 26px;
+  line-height: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  animation: aparecer 3s ease-in-out 7s infinite;
+}
+
+.intro__tituloContainer h2:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.intro__videoContainer {
   position: absolute;
   width: 500%;
   margin: auto;
@@ -41,20 +77,20 @@ h2 {
 }
 
 @media (min-width: 600px) {
-  .videoContainer {
+  .intro__videoContainer {
     position: absolute;
     width: 800px;
     left: calc(50% - 400px);
     top: calc(50vh - 225px);
   }
 
-  .tituloContainer {
+  .intro__tituloContainer {
     width: 500px;
     left: calc(50% - 250px);
     top: calc(50vh - 52px);
   }
 
-  .tituloContainer h1 {
+  .intro__tituloContainer h1 {
     font-size: 72px;
   }
 }
