@@ -13,6 +13,8 @@ import {
   Link,
   Router,
 } from "react-router-dom";
+import LidiaBorda from "./secciones/LidiaBorda";
+import NoeliaMoncada from "./secciones/NoeliaMoncada";
 
 function App() {
   return (
@@ -28,6 +30,28 @@ function App() {
                 <Header />
                 <Nav />
                 <Home />
+              </>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/lidiaBorda"
+            element={
+              <>
+                <Header />
+                <Nav />
+                <LidiaBorda />
+              </>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/noeliaMoncada"
+            element={
+              <>
+                <Header />
+                <Nav />
+                <NoeliaMoncada />
               </>
             }
           ></Route>
