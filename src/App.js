@@ -14,6 +14,7 @@ import {
   Router,
 } from "react-router-dom";
 import SalaArana from "./secciones/SalaArana";
+import PaginaConstruccion from "./secciones/PaginaContruccion";
 
 function App() {
   return (
@@ -45,12 +46,12 @@ function App() {
           ></Route>
           <Route
             exact
-            path="/salaArana"
+            path="/pagina"
             element={
               <>
                 <Header />
                 <Nav />
-                <SalaArana />
+                <PaginaConstruccion />
               </>
             }
           ></Route>

@@ -68,8 +68,8 @@
   width: 100%;
   -webkit-filter: grayscale(100%) blur(2px);
   filter: grayscale(100%) blur(2px);
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgb(0, 0, 0);
+  /*   border-radius: 10px; */
+  /* box-shadow: 0 0 15px rgb(0, 0, 0); */
 }
 
 .span_black {

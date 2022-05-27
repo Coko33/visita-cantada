@@ -1,11 +1,11 @@
-.salaArana {
+.homeSalaArana {
   position: relative;
   top: 40px;
   width: 100%;
   height: 1000px;
 }
 
-.salaArana__containerImg {
+.homeSalaArana__containerImg {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
   width: 37.5%;
 }
 
-.salaAraña__letrasGigantes {
+.homeSalaArana__letrasGigantes {
   position: absolute;
   width: 62.5%;
   height: 100%;
@@ -25,7 +25,7 @@
   z-index: 200;
 }
 
-.salaAraña__letrasGigantes h3 {
+.homeSalaArana__letrasGigantes h3 {
   line-height: 90px;
   margin: 0;
   font-size: 170px;
@@ -34,19 +34,19 @@
   white-space: nowrap;
 }
 
-.salaArana__img {
+.homeSalaArana__img {
   /* -webkit-filter: brightness(20%); */
   filter: brightness(60%) contrast(180%);
   width: 100%;
 }
 
-.salaArana__containerTitulo {
+.homeSalaArana__containerTitulo {
   position: absolute;
   width: 220px;
   height: 50px;
 }
 
-.salaArana__titulo {
+.homeSalaArana__titulo {
   display: block;
   position: absolute;
   margin: 0;
@@ -57,12 +57,12 @@
   width: 100%;
 }
 
-.salaArana__titulo--columnas {
+.homeSalaArana__titulo--columnas {
   bottom: -10%;
   right: -105%;
 }
 
-.salaArana__subrayTitulo {
+.homeSalaArana__subrayTitulo {
   position: absolute;
   height: 4px;
   background-color: white;
@@ -70,13 +70,13 @@
   bottom: -6px;
 }
 
-.salaArana__subrayTitulo--columnas {
+.homeSalaArana__subrayTitulo--columnas {
   bottom: calc(-10% + 6px);
   left: 0;
   width: 30%;
 }
 
-.salaArana__imgSalaColumnas {
+.homeSalaArana__imgSalaColumnas {
   position: absolute;
   width: 33.3%;
   left: 166.6%;

@@ -5,8 +5,8 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <div className="salaArana">
-        <div className="salaAraña__letrasGigantes">
+      <div className="homeSalaArana">
+        <div className="homeSalaArana__letrasGigantes">
           <h3>visita cantada</h3>
           <br></br>
           <h3>sala columnas</h3>
@@ -17,14 +17,14 @@ export default function Home() {
           <br></br>
           <h3>patio de la procuraduría</h3>
         </div>
-        <div className="salaArana__containerImg">
+        <div className="homeSalaArana__containerImg">
           <img
-            className="salaArana__img"
+            className="homeSalaArana__img"
             src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/ara%C3%B1a.png"
           ></img>
-          <div className="salaArana__containerTitulo">
-            <h2 className="salaArana__titulo">Sala Araña</h2>
-            <div className="salaArana__subrayTitulo"></div>
+          <div className="homeSalaArana__containerTitulo">
+            <h2 className="homeSalaArana__titulo">Sala Araña</h2>
+            <div className="homeSalaArana__subrayTitulo"></div>
           </div>
           <VideoWraper
             source1={
@@ -42,12 +42,12 @@ export default function Home() {
             titulo={"Noelia Moncada"}
             linkTo={"/salaArana"}
           ></VideoWraper>
-          <h2 className="salaArana__titulo salaArana__titulo--columnas">
+          <h2 className="homeSalaArana__titulo homeSalaArana__titulo--columnas">
             Sala Columnas
           </h2>
-          <div className="salaArana__subrayTitulo salaArana__subrayTitulo--columnas"></div>
+          <div className="homeSalaArana__subrayTitulo homeSalaArana__subrayTitulo--columnas"></div>
           <img
-            className="salaArana__imgSalaColumnas"
+            className="homeSalaArana__imgSalaColumnas"
             src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/columnas.png"
           ></img>
         </div>

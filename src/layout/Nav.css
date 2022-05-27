@@ -41,6 +41,11 @@ ul li {
   background-color: #666666;
 }
 
+.navBar__menuItem a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .navBar__icono {
   position: relative;
   width: 20px;
