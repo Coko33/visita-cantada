@@ -52,6 +52,26 @@ export default function Home() {
           ></img>
         </div>
       </div>
+      <div className="homeLaboratorio">
+        <div className="homeLaboratorio__containerImg">
+          <img
+            className="homeLaboratorio__img"
+            src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/laboratorio.jpg"
+          ></img>
+          <div className="homeLaboratorio__containerTitulo">
+            <h2 className="homeLaboratorio__titulo">Laboratorio</h2>
+            <div className="homeLaboratorio__subrayTitulo"></div>
+          </div>
+          <VideoWraper
+            source1={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/ElectrochongoLoop_edit.mp4"
+            }
+            clase={"videoHome videoHome--electrochongo"}
+            titulo={"Electrochongo"}
+            linkTo={"/laboratorio"}
+          ></VideoWraper>
+        </div>
+      </div>
     </>
   );
 }

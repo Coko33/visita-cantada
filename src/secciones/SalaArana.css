@@ -6,7 +6,8 @@
   position: relative;
   display: inline-block;
   margin: 120px 0 20px 0;
-  font-size: 72px;
+  font-family: BrlwSC_Bold;
+  font-size: 70px;
   color: #fff;
   left: calc(12.5% + 10px);
   text-decoration: none;
@@ -22,7 +23,7 @@
   border-style: solid;
 }
 
-.salaArana p {
+.salaArana__parrafo {
   position: relative;
   color: #fff;
   left: calc(12.5% + 10px);
@@ -47,11 +48,13 @@
 
 .videoHome--salaArana1 {
   position: relative;
+  flex-direction: column;
   top: 120px;
   left: 33.3%;
   width: 66.6%;
   margin-bottom: 20px;
 }
+
 .videoHome--salaArana2 {
   position: relative;
   top: 120px;

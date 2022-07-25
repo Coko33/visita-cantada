@@ -1,13 +1,16 @@
 import React from "react";
 import "./SalaArana.css";
 import VideoWraper from "../components/VideoWraper";
+import { useModal } from "../hooks/useModal";
+import ModalVideos from "../components/ModalVideos";
 
 export default function SalaArana() {
+  const [isOpenModalYT, openModalYt, closeModalYT] = useModal();
   return (
     <>
       <div className="salaArana">
         <h1>Sala Araña</h1>
-        <p>
+        <p className="salaArana__parrafo">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
           volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -22,8 +25,8 @@ export default function SalaArana() {
             }
             clase={"videoHome videoHome--salaArana1"}
             titulo={"Lidia Borda"}
-            bajada={""}
-            linkTo={"/salaArana"}
+            subtitulo={"No te apures carablanca"}
+            linkTo={"#"}
           ></VideoWraper>
           <VideoWraper
             source1={
@@ -31,8 +34,8 @@ export default function SalaArana() {
             }
             clase={"videoHome videoHome--salaArana2"}
             titulo={"Lidia Borda"}
-            bajada={""}
-            linkTo={"/salaArana"}
+            subtitulo={"Titulo 2"}
+            linkTo={"#"}
           ></VideoWraper>
           <VideoWraper
             source1={
@@ -40,8 +43,8 @@ export default function SalaArana() {
             }
             clase={"videoHome videoHome--salaArana3"}
             titulo={"Lidia Borda"}
-            bajada={""}
-            linkTo={"/salaArana"}
+            subtitulo={"Titulo 3"}
+            linkTo={"#"}
           ></VideoWraper>
         </div>
       </div>
