@@ -11,30 +11,34 @@ export default function SalaArana() {
       <div className="salaArana">
         <h1>Sala Araña</h1>
         <p className="salaArana__parrafo">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          Duis autem vel eum iriure{" "}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estas salas fueron parte de un conjunto
+          de viviendas de renta que el Virrey Juan José de Vértiz y Salcedo
+          encargó construir al arquitecto José Claudio de Sáa y Farías. Se las
+          llamo casas redituantes.<br></br>
+          <br></br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por estos espacios, pasaron múltiples
+          instituciones del estado como el Concejo Deliberante de la Ciudad de
+          Buenos Aires y las facultades de Ciencias Exactas y Naturales,
+          Ingeniería y Arquitectura de la Universidad de Buenos Aires.
         </p>
         <img src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/ara%C3%B1a2.jpg"></img>
         <div className="salaArana__containerVideos">
           <VideoWraper
             source1={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/lidiaLoop_edit.mp4"
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Lidia_carablanca_loop.mp4"
             }
             clase={"videoHome videoHome--salaArana1"}
             titulo={"Lidia Borda"}
-            subtitulo={"No te apures carablanca"}
-            linkTo={"#"}
+            subtitulo={"No te apures Carablanca"}
+            linkTo={"https://www.youtube.com/watch?v=gA6WGYQWrKc"}
           ></VideoWraper>
           <VideoWraper
             source1={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/lidiaLoop_edit.mp4"
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Lidia_enUnCorralon_loop.mp4"
             }
             clase={"videoHome videoHome--salaArana2"}
             titulo={"Lidia Borda"}
-            subtitulo={"Titulo 2"}
+            subtitulo={"En un corralon de Barracas"}
             linkTo={"#"}
           ></VideoWraper>
           <VideoWraper
