@@ -1,22 +1,23 @@
 import React from "react";
 import "./ModalVideos.css";
 
-export default function ModalVideos(
-  linkYoutube,
+export default function ModalVideos({
+  linkVideo,
   titulo,
   isOpenModalYT,
-  closeModalYT
-) {
+  closeModalYT,
+}) {
   return (
     <>
       <div className={`modal ${isOpenModalYT && "active"}`}>
         <div className="modal__cerrar">
-          <button onClick={closeModalYT}>x</button>
+          <button onClick={() => closeModalYT()}>x</button>
         </div>
         <iframe
           className="modal__iframe"
           title={titulo}
-          src={`${linkYoutube}?autoplay=1&controls=1`}
+          src={`${linkVideo}?autoplay=1&controls=0`}
+          allow="autoplay"
         ></iframe>
       </div>
     </>

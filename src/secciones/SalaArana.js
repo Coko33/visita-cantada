@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SalaArana.css";
 import VideoWraper from "../components/VideoWraper";
 import { useModal } from "../hooks/useModal";
 import ModalVideos from "../components/ModalVideos";
 
 export default function SalaArana() {
-  const [isOpenModalYT, openModalYt, closeModalYT] = useModal();
+  const [isOpenModalYT, openModalYT, closeModalYT] = useModal(false);
+  const [linkVideo, setLinkVideo] = useState();
+
+  const abrirVideo = (linkTo) => {
+    openModalYT();
+    setLinkVideo(linkTo);
+  };
+
   return (
     <>
       <div className="salaArana">
+        {isOpenModalYT && (
+          <ModalVideos
+            closeModalYT={closeModalYT}
+            isOpenModalYT={isOpenModalYT}
+            linkVideo={linkVideo}
+          ></ModalVideos>
+        )}
         <h1>Sala Araña</h1>
         <p className="salaArana__parrafo">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estas salas fueron parte de un conjunto
@@ -23,15 +37,22 @@ export default function SalaArana() {
         </p>
         <img src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/ara%C3%B1a2.jpg"></img>
         <div className="salaArana__containerVideos">
-          <VideoWraper
-            source1={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Lidia_carablanca_loop.mp4"
+          <div
+            onClick={() =>
+              abrirVideo("https://www.youtube.com/embed/rpJeifR05Hs")
             }
-            clase={"videoHome videoHome--salaArana1"}
-            titulo={"Lidia Borda"}
-            subtitulo={"No te apures Carablanca"}
-            linkTo={"https://www.youtube.com/watch?v=gA6WGYQWrKc"}
-          ></VideoWraper>
+          >
+            <VideoWraper
+              source1={
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Lidia_carablanca_loop.mp4"
+              }
+              clase={"videoHome videoHome--salaArana1"}
+              titulo={"Lidia Borda"}
+              subtitulo={"No te apures Carablanca"}
+              linkTo={"https://www.youtube.com/watch?v=gA6WGYQWrKc"}
+            ></VideoWraper>
+          </div>
+
           <VideoWraper
             source1={
               "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Lidia_enUnCorralon_loop.mp4"

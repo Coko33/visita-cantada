@@ -5,9 +5,13 @@
   width: 100%;
 }
 
+.homeLaboratorio {
+  top: 140px;
+}
+
 .homeSalaArana__containerImg,
 .homeLaboratorio__containerImg {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +31,7 @@
   top: 120px;
   overflow: hidden;
   z-index: 200;
+  height: 600px;
 }
 
 .homeSalaArana__letrasGigantes h3 {

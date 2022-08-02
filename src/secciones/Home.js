@@ -28,16 +28,22 @@ export default function Home() {
           </div>
           <VideoWraper
             source1={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/lidiaLoop_edit.mp4"
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Lidia_carablanca_loop.mp4"
             }
+            /* source1={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/lidiaLoop_edit.mp4"
+            } */
             clase={"videoHome videoHome--lidiaBorda"}
             titulo={"Lidia Borda"}
             linkTo={"/salaArana"}
           ></VideoWraper>
           <VideoWraper
             source1={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/noeliaMoncadaLoop_edit.mp4"
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Noelia_cuestaAbajo_loop.mp4"
             }
+            /* source1={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/noeliaMoncadaLoop_edit.mp4"
+            } */
             clase={"videoHome videoHome--noeliaMoncada"}
             titulo={"Noelia Moncada"}
             linkTo={"/salaArana"}
@@ -64,8 +70,11 @@ export default function Home() {
           </div>
           <VideoWraper
             source1={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/ElectrochongoLoop_edit.mp4"
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Electroch_musicaDePutos_loop+con+mas+ruido.mp4"
             }
+            /* source1={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/ElectrochongoLoop_edit.mp4"
+            } */
             clase={"videoHome videoHome--electrochongo"}
             titulo={"Electrochongo"}
             linkTo={"/laboratorio"}
