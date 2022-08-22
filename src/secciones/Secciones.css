@@ -1,8 +1,8 @@
-.salaArana {
+.seccion {
   position: relative;
 }
 
-.salaArana h1 {
+.seccion h1 {
   position: relative;
   display: inline-block;
   margin: 120px 0 20px 0;
@@ -13,7 +13,7 @@
   text-decoration: none;
 }
 
-.salaArana h1:after {
+.seccion h1:after {
   content: "";
   width: 100%;
   position: absolute;
@@ -23,14 +23,14 @@
   border-style: solid;
 }
 
-.salaArana__parrafo {
+.seccion__parrafo {
   position: relative;
   color: #fff;
   left: calc(12.5% + 10px);
   width: calc(37.5% - 20px);
 }
 
-.salaArana img {
+.seccion img {
   position: relative;
   color: #fff;
   left: 12.5%;
@@ -39,12 +39,36 @@
   -webkit-filter: brightness(80%) contrast(120%);
 }
 
-.salaArana__containerVideos {
+.seccion__containerVideos {
   position: absolute;
   top: 0;
   width: 37.5%;
   left: 37.5%;
 }
+
+/*PROCU*/
+
+.videoHome--procu1 {
+  position: relative;
+  flex-direction: column;
+  top: 240px;
+  left: 33.3%;
+  width: 66.6%;
+  margin-bottom: 20px;
+}
+
+.claseX {
+  position: relative;
+  display: inline-block;
+  margin: 120px 0 20px 0;
+  font-family: BrlwSC_Bold;
+  font-size: 50px;
+  color: #fff;
+  left: calc(12.5% + 10px);
+  text-decoration: none;
+}
+
+/*SALA ARAÑA*/
 
 .videoHome--salaArana1 {
   position: relative;
@@ -68,3 +92,9 @@
   left: 0;
   width: 66.6%;
 }
+
+/*EXACTAS*/
+.exactas h1 {
+  color: #fff;
+}
+

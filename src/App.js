@@ -14,6 +14,7 @@ import {
   Router,
 } from "react-router-dom";
 import SalaArana from "./secciones/SalaArana";
+import Procuraduria from "./secciones/Procuraduria";
 import PaginaConstruccion from "./secciones/PaginaContruccion";
 
 function App() {
@@ -41,6 +42,17 @@ function App() {
                 <Header />
                 <Nav />
                 <SalaArana />
+              </>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/procuraduria"
+            element={
+              <>
+                <Header />
+                <Nav />
+                <Procuraduria />
               </>
             }
           ></Route>

@@ -32,7 +32,7 @@ export default function Nav() {
               Procuraduría <img className="navBar__icono" src={flecha}></img>
             </div>
             <ul className={`navBar__subMenu ${activeProcu && "active"}`}>
-              <NavLink to="/pagina">
+              <NavLink to="/procuraduria">
                 <li className="navBar__submenuItem">
                   Patio de la Procuraduría
                 </li>
