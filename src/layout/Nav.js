@@ -3,7 +3,7 @@ import flecha from "./../icons/flecha.svg";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
-export default function Nav() {
+export default function Nav({ manejarScroll }) {
   const [activeProcu, setActiveProcu] = useState(false);
   const [activeCasas, setActiveCasas] = useState(false);
 
@@ -19,6 +19,7 @@ export default function Nav() {
   const desactivarCasas = (e) => {
     setActiveCasas(false);
   };
+
   return (
     <>
       <div className="navBar">
@@ -37,9 +38,12 @@ export default function Nav() {
                   Patio de la Procuraduría
                 </li>
               </NavLink>
-              <NavLink to="/pagina">
-                <li className="navBar__submenuItem">Galerías Altas</li>
+              <NavLink to="/procuraduriaGA">
+                <li className="navBar__submenuItem" onClick={manejarScroll}>
+                  Galerías Altas
+                </li>
               </NavLink>
+
               <NavLink to="/pagina">
                 <li className="navBar__submenuItem">Galerías Bajas</li>
               </NavLink>

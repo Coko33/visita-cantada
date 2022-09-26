@@ -16,8 +16,15 @@ import {
 import SalaArana from "./secciones/SalaArana";
 import Procuraduria from "./secciones/Procuraduria";
 import PaginaConstruccion from "./secciones/PaginaContruccion";
-
+import { useState } from "react";
 function App() {
+  const [scrollToGA, setScrollToGA] = useState(false);
+  const manejarScrollToGA = () => setScrollToGA(true);
+  /*(scrollToGA) => !scrollToGA*/
+  const resetScroll = () => {
+    setScrollToGA(false);
+    console.log("entra");
+  };
   return (
     <>
       <HashRouter>
@@ -51,8 +58,25 @@ function App() {
             element={
               <>
                 <Header />
-                <Nav />
-                <Procuraduria />
+                <Nav manejarScroll={manejarScrollToGA} />
+                <Procuraduria
+                  scrollToGA={scrollToGA}
+                  resetScroll={resetScroll}
+                />
+              </>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/procuraduriaGA"
+            element={
+              <>
+                <Header />
+                <Nav manejarScroll={manejarScrollToGA} />
+                <Procuraduria
+                  scrollToGA={scrollToGA}
+                  resetScroll={resetScroll}
+                />
               </>
             }
           ></Route>

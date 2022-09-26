@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Secciones.css";
 import VideoWraper from "../components/VideoWraper";
 import { useModal } from "../hooks/useModal";
 import ModalVideos from "../components/ModalVideos";
+import { useLocation } from "react-router-dom";
 
-export default function Procuraduria() {
+export default function Procuraduria({ scrollToGA, resetScroll }) {
   const [isOpenModalYT, openModalYT, closeModalYT] = useModal(false);
   const [linkVideo, setLinkVideo] = useState();
+  const GA = useRef();
+  scrollToGA && GA.current.scrollIntoView({ behavior: "smooth" });
+  let location = useLocation();
+
+  useEffect(() => {
+    location.pathname == "/procuraduriaGA" &&
+      GA.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
 
   const abrirVideo = (linkTo) => {
     openModalYT();
@@ -15,7 +24,7 @@ export default function Procuraduria() {
 
   return (
     <>
-      <div className="seccion">
+      <div className="seccion" onScroll={resetScroll()}>
         {isOpenModalYT && (
           <ModalVideos
             closeModalYT={closeModalYT}
@@ -43,6 +52,7 @@ export default function Procuraduria() {
           Público.
         </p>
         <img
+          ref={GA}
           src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/procu.jpg"
           alt="imagen del patio de la procuraduría"
         ></img>

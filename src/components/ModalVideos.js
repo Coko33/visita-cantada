@@ -16,7 +16,7 @@ export default function ModalVideos({
         <iframe
           className="modal__iframe"
           title={titulo}
-          src={`${linkVideo}?autoplay=1&controls=0`}
+          src={`${linkVideo}?autoplay=1&controls=1`}
           allow="autoplay"
         ></iframe>
       </div>
