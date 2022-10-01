@@ -1,11 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import flecha from "./../icons/flecha.svg";
 import { NavLink } from "react-router-dom";
+import useWindowDimensions from "../hooks/useWindowDimensions";
+import { Animated } from "react-animated-css";
+import { useModal } from "./../hooks/useModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.css";
 
 export default function Nav({ manejarScroll }) {
+  let windowDimensions = useWindowDimensions();
+  const [isOpenMenu, openMenu, closeMenu] = useModal(false);
+  const [isActiveMenu, setIsActiveMenu] = useState(false);
+
   const [activeProcu, setActiveProcu] = useState(false);
   const [activeCasas, setActiveCasas] = useState(false);
+
+  useEffect(() => {
+    windowDimensions.width > 599 && openMenu();
+  }, []);
+
+  const toggleMenu = () => {
+    if (isOpenMenu) {
+      closeMenu();
+      setTimeout(() => setIsActiveMenu(false), 400);
+    } else {
+      openMenu();
+      setIsActiveMenu(true);
+    }
+  };
+
+  const navegar = () => {
+    if (windowDimensions.width < 600) {
+      closeMenu();
+      setTimeout(() => setIsActiveMenu(false), 400);
+    }
+  };
 
   const activarProcu = (e) => {
     setActiveProcu(true);
@@ -22,7 +52,16 @@ export default function Nav({ manejarScroll }) {
 
   return (
     <>
-      <div className="navBar">
+      <div className="bars" onClick={toggleMenu}>
+        <FontAwesomeIcon className="bars-icon" icon={faLayerGroup} />
+      </div>
+
+      <Animated
+        className={`navBar  ${isActiveMenu && "isActive"}`}
+        animationIn={windowDimensions.width < 600 ? `${"fadeInRight"}` : ""}
+        animationOut="fadeOutRight"
+        isVisible={isOpenMenu}
+      >
         <ul className="navBar__menu">
           <li
             className="navBar__menuItem"
@@ -51,7 +90,7 @@ export default function Nav({ manejarScroll }) {
           </li>
 
           <li className="navBar__menuItem">
-            <NavLink to="/pagina">
+            <NavLink to="/exactas">
               <div className="navBar__textContainer">Exactas</div>
             </NavLink>
           </li>
@@ -99,7 +138,7 @@ export default function Nav({ manejarScroll }) {
             </NavLink>
           </li>
         </ul>
-      </div>
+      </Animated>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Secciones.css";
+import "./Exactas.css";
 export default function Exactas() {
   return (
     <>

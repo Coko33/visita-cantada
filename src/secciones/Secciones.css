@@ -1,8 +1,10 @@
 .seccion {
   position: relative;
+  margin-bottom: 300px;
 }
 
-.seccion h1, .seccion h2 {
+.seccion h1,
+.seccion h2 {
   display: inline-block;
   margin: 120px 0 20px 0;
   font-family: BrlwSC_Bold;
@@ -17,20 +19,15 @@
 }
 
 .seccion h2 {
+  position: relative;
   font-size: 50px;
   margin: 0;
 }
 
-.seccion__galeriasAltas--titulo {
+.seccion__galeriasAltas {
   position: absolute;
-  left: calc(50% + 10px);
-  bottom: 400px;
-}
-
-.seccion__galeriasAltas--parrafo {
-  position: absolute;
-  left: calc(50% + 10px);
-  bottom: 180px;
+  left: calc(50% + 30px);
+  bottom: 460px; /*esto*/
 }
 
 .seccion h1:after {
@@ -42,11 +39,20 @@
   border-width: 0 0 4px;
   border-style: solid;
 }
-.seccion__titulo--gAltas:after  {
+.seccion__titulo--gAltas:after {
   content: "";
   width: 100%;
   position: absolute;
   display: block;
+  left: 0;
+  bottom: -6px;
+  border-width: 0 0 4px;
+  border-style: solid;
+}
+.seccion__titulo--gBajas:after {
+  content: "";
+  width: 100%;
+  position: absolute;
   left: 0;
   bottom: -6px;
   border-width: 0 0 4px;
@@ -65,10 +71,10 @@
   width: 66.6%;
 }
 
-.seccion img {
+.seccion__imagen1 {
   position: relative;
   color: #fff;
-  left: 12.5%;
+  left: 0;
   width: 37.5%;
   filter: brightness(60%) contrast(180%);
   -webkit-filter: brightness(80%) contrast(120%);
@@ -81,14 +87,39 @@
   left: 37.5%;
 }
 
+.seccion__galeriasBajas--titulo {
+  position: relative;
+  left: calc(12.5% + 10px);
+}
+
+.seccion__parrafo.gBajas {
+  width: 500px;
+}
+
 /*PROCU*/
 
 .videoHome--procu1 {
   position: relative;
   flex-direction: column;
   top: 240px;
-  left: 33.3%;
+  left: calc(33.3% + 20px);
   width: 66.6%;
+  margin-bottom: 20px;
+}
+.videoHome--procu2 {
+  position: absolute;
+  flex-direction: column;
+  top: 270px; /*esto*/
+  left: 0;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.videoHome--procu3 {
+  position: absolute;
+  flex-direction: column;
+  top: 560px; /*esto*/
+  left: -200px;
+  width: 50%;
   margin-bottom: 20px;
 }
 
@@ -112,6 +143,7 @@
   left: 33.3%;
   width: 66.6%;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .videoHome--salaArana2 {
@@ -120,10 +152,42 @@
   left: 33.3%;
   width: 66.6%;
   margin-bottom: 40px;
+  margin-left: 20px;
 }
+
+/*SALA COLUMNAS*/
+.columnas {
+  position: absolute;
+  top: 0;
+  left: 66.6%;
+}
+.seccion__titulo--columnas {
+  position: absolute;
+  left: calc(33.3% + 20px);
+  top: 50px;
+  z-index: 7;
+}
+
+.seccion__titulo--columnas:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-width: 0 0 4px;
+  border-style: solid;
+}
+
+.seccion__imagen2 {
+  position: absolute;
+  left: 0 !important;
+  top: 120px;
+  z-index: 0;
+}
+
 .videoHome--salaArana3 {
   position: relative;
-  top: 120px;
+  top: 150px;
   left: 0;
   width: 66.6%;
 }
@@ -133,3 +197,23 @@
   color: #fff;
 }
 
+@media (max-width: 1440px) {
+  /* .seccion {
+    background-color: blueviolet;
+  } */
+
+  .seccion__galeriasAltas {
+    bottom: 380px;
+  }
+
+  .videoHome--procu2 {
+    top: 300px;
+  }
+
+  .videoHome--procu3 {
+    top: 520px; /*esto*/
+    left: -50px;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}

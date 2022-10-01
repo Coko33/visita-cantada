@@ -3,8 +3,13 @@ ul li {
 }
 
 .navBar {
+  display: none;
   height: 0;
   background: #666666;
+}
+
+.navBar.isActive {
+  display: block;
 }
 
 .navBar__menu {
@@ -83,4 +88,46 @@ ul li {
   background-color: #fff;
 }
 
+.bars {
+  position: absolute;
+  display: flex;
+  line-height: 59px;
+  height: 59px;
+  top: 0;
+  right: 0;
+  left: auto;
+  margin: 20px;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
 
+.bars-icon {
+  font-size: 30px;
+}
+
+@media (max-width: 425px) {
+  .navBar__menu {
+    position: relative;
+    flex-direction: column;
+    min-width: none;
+  }
+  .navBar__subMenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    top: inherit;
+    height: inherit;
+  }
+  .navBar__menuItem a {
+    position: relative;
+  }
+  .navBar__menuItem {
+    position: relative;
+    flex-direction: column;
+  }
+  .navBar__submenuItem {
+    position: relative;
+  }
+}

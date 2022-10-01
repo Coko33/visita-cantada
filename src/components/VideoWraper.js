@@ -6,6 +6,7 @@ export default function VideoWraper({
   clase,
   titulo,
   subtitulo,
+  poster,
   linkTo,
 }) {
   /* const [source, setSource] = useState(null)
@@ -25,7 +26,7 @@ export default function VideoWraper({
             )}
           </div>
 
-          <video autoPlay muted loop>
+          <video autoPlay muted loop poster={poster}>
             <source src={source1} type="video/mp4"></source>
             {/*         <source src={source2} type="video/ogg"></source> */}
             tu navegador no es compatible con videos en html5

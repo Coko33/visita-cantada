@@ -37,6 +37,7 @@ export default function SalaArana() {
           Ingeniería y Arquitectura de la Universidad de Buenos Aires.
         </p>
         <img
+          className="seccion__imagen1"
           src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/ara%C3%B1a2.jpg"
           alt="imagen de la sala de la araña"
         ></img>
@@ -69,13 +70,22 @@ export default function SalaArana() {
           ></VideoWraper>
           <VideoWraper
             source1={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/lidiaLoop_edit.mp4"
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Noelia_cuestaAbajo_loop.mp4"
             }
             clase={"videoHome videoHome--salaArana3"}
-            titulo={"Lidia Borda"}
-            subtitulo={"Titulo 3"}
+            titulo={"Noelia Moncada"}
+            subtitulo={"Cuesta abajo"}
             linkTo={"#"}
           ></VideoWraper>
+        </div>
+        <div className="columnas">
+          <h2 className="seccion__titulo--columnas">Sala Columnas</h2>
+          <img
+            className="seccion__imagen2"
+            src={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/columnas.png"
+            }
+          ></img>
         </div>
       </div>
     </>

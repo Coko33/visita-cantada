@@ -15,8 +15,10 @@ import {
 } from "react-router-dom";
 import SalaArana from "./secciones/SalaArana";
 import Procuraduria from "./secciones/Procuraduria";
+import Exactas from "./secciones/Exactas";
 import PaginaConstruccion from "./secciones/PaginaContruccion";
 import { useState } from "react";
+import Dimensions from "./components/Dimensions";
 function App() {
   const [scrollToGA, setScrollToGA] = useState(false);
   const manejarScrollToGA = () => setScrollToGA(true);
@@ -27,6 +29,7 @@ function App() {
   };
   return (
     <>
+      <Dimensions></Dimensions>
       <HashRouter>
         <Routes>
           <Route exact path="/" element={<Intro />}></Route>
@@ -41,17 +44,7 @@ function App() {
               </>
             }
           ></Route>
-          <Route
-            exact
-            path="/salaArana"
-            element={
-              <>
-                <Header />
-                <Nav />
-                <SalaArana />
-              </>
-            }
-          ></Route>
+
           <Route
             exact
             path="/procuraduria"
@@ -77,6 +70,28 @@ function App() {
                   scrollToGA={scrollToGA}
                   resetScroll={resetScroll}
                 />
+              </>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/exactas"
+            element={
+              <>
+                <Header />
+                <Nav />
+                <Exactas />
+              </>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/salaArana"
+            element={
+              <>
+                <Header />
+                <Nav />
+                <SalaArana />
               </>
             }
           ></Route>
