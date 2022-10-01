@@ -74,7 +74,7 @@
 .seccion__imagen1 {
   position: relative;
   color: #fff;
-  left: 0;
+  left: 12.5%;
   width: 37.5%;
   filter: brightness(60%) contrast(180%);
   -webkit-filter: brightness(80%) contrast(120%);
@@ -152,18 +152,19 @@
   left: 33.3%;
   width: 66.6%;
   margin-bottom: 40px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 /*SALA COLUMNAS*/
 .columnas {
-  position: absolute;
-  top: 0;
-  left: 66.6%;
+  position: relative;
+  width: 500px;
+  top: 60px; /*esto*/
+  left: calc(33.3% + 20px);
 }
 .seccion__titulo--columnas {
   position: absolute;
-  left: calc(33.3% + 20px);
+  left: 0px;
   top: 50px;
   z-index: 7;
 }
@@ -180,15 +181,18 @@
 
 .seccion__imagen2 {
   position: absolute;
-  left: 0 !important;
-  top: 120px;
+  left: 0;
+  width: 100%;
+  top: 140px;
   z-index: 0;
+  filter: brightness(60%) contrast(180%);
+  -webkit-filter: brightness(80%) contrast(120%);
 }
 
 .videoHome--salaArana3 {
   position: relative;
-  top: 150px;
-  left: 0;
+  top: 410px;
+  left: calc(33.3% - 50px);
   width: 66.6%;
 }
 

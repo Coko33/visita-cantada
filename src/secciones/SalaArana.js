@@ -68,6 +68,15 @@ export default function SalaArana() {
             subtitulo={"En un corralon de Barracas"}
             linkTo={"#"}
           ></VideoWraper>
+          <div className="columnas">
+            <h2 className="seccion__titulo--columnas">Sala Columnas</h2>
+            <img
+              className="seccion__imagen2"
+              src={
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/columnas.png"
+              }
+            ></img>
+          </div>
           <VideoWraper
             source1={
               "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Noelia_cuestaAbajo_loop.mp4"
@@ -77,15 +86,6 @@ export default function SalaArana() {
             subtitulo={"Cuesta abajo"}
             linkTo={"#"}
           ></VideoWraper>
-        </div>
-        <div className="columnas">
-          <h2 className="seccion__titulo--columnas">Sala Columnas</h2>
-          <img
-            className="seccion__imagen2"
-            src={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/columnas.png"
-            }
-          ></img>
         </div>
       </div>
     </>
