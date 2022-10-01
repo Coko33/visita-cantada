@@ -18,7 +18,8 @@
   align-items: center;
 }
 
-.videoWrapper__titulos h2 {
+.videoWrapper__titulos h3 {
+  font-size: 1.5em;
   position: relative;
   margin: 0;
 }

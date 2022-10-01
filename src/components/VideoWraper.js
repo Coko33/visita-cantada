@@ -19,7 +19,7 @@ export default function VideoWraper({
       <NavLink to={`${linkTo}`}>
         <div className={`videoWrapper ${clase}`}>
           <div className="videoWrapper__titulos">
-            <h2>{titulo}</h2>
+            <h3>{titulo}</h3>
             {subtitulo && (
               <p className="videoWrapper__subtitulos">{subtitulo}</p>
             )}

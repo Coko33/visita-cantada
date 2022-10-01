@@ -93,6 +93,11 @@ export default function Nav({ manejarScroll }) {
               </div>
             </NavLink>
           </li>
+          <li className="navBar__menuItem">
+            <NavLink to="/pagina">
+              <div className="navBar__textContainer">Laboratorio</div>
+            </NavLink>
+          </li>
         </ul>
       </div>
     </>

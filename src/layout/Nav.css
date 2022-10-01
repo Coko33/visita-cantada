@@ -11,8 +11,8 @@ ul li {
   /*   top: 40px; */
   position: relative;
   padding: 0 10px;
-  width: 970px;
-  left: calc(50% - 485px);
+  min-width: 1200px;
+  left: calc(50% - 600px);
   display: flex;
   flex-direction: row;
   align-items: center;

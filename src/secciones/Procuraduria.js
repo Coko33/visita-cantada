@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
 import "./Secciones.css";
 import VideoWraper from "../components/VideoWraper";
 import { useModal } from "../hooks/useModal";
@@ -12,7 +12,7 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
   scrollToGA && GA.current.scrollIntoView({ behavior: "smooth" });
   let location = useLocation();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     location.pathname == "/procuraduriaGA" &&
       GA.current.scrollIntoView({ behavior: "smooth" });
   }, []);
@@ -52,7 +52,6 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
           Público.
         </p>
         <img
-          ref={GA}
           src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/procu.jpg"
           alt="imagen del patio de la procuraduría"
         ></img>
@@ -72,8 +71,27 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
               linkTo="#"
               /* linkTo={"https://www.youtube.com/watch?v=gA6WGYQWrKc"} */
             ></VideoWraper>
-            <h2>Galerias Altas</h2>
           </div>
+        </div>
+        <div className="seccion__galeriasAltas--titulo">
+          {" "}
+          <h2 className="seccion__titulo--gAltas" ref={GA}>
+            Galerias Altas
+          </h2>
+        </div>
+        <div className="seccion__galeriasAltas--parrafo">
+          <p className="seccion__parrafo gAltas">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En el primer piso de Procuraduría,
+            funcionó el Museo Público (hoy, Museo Argentino de Ciencias
+            Naturales Bernardino Rivadavia). Su primer director, Karl Burmeister
+            ocupó el cargo por 30 años y murió a los 85 por un accidente laboral
+            luego de caer por unas escaleras.
+            <br></br>
+            <br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Al mismo tiempo y hasta principios de
+            la década de 1970, funcionaron aulas y salones de la Facultad de
+            Ciencias Exactas y Naturales.
+          </p>
         </div>
       </div>
     </>
