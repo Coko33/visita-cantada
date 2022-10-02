@@ -35,22 +35,21 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
         )}
         <h1>Patio de la Procuraduria</h1>
         <p className="seccion__parrafo">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construido en 1730, los planos de este
-          sitio se adjudican al arquitecto jesuita Juan Bautista Prímoli. Fue la
-          sede administrativa del comercio generado por las Misiones Jesuíticas.
-          Funcionó aquí un depósito, oficinas, alojamiento y una botica. También
-          se daban clases de teología, matemáticas y filosofía. El baño más
-          antiguo de Buenos Aires se encuentra en este sitio.
+          Construido en 1730, los planos de este sitio se adjudican al
+          arquitecto jesuita Juan Bautista Prímoli. Fue la sede administrativa
+          del comercio generado por las Misiones Jesuíticas. Funcionó aquí un
+          depósito, oficinas, alojamiento y una botica. También se daban clases
+          de teología, matemáticas y filosofía. El baño más antiguo de Buenos
+          Aires se encuentra en este sitio.
           <br></br>
           <br></br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Durante el virreinato, funcionó el
-          Protomedicato del Río de la Plata, la Real Imprenta de Niños Expósitos
-          y la primera escuela de medicina, entre otras actividades.
+          Durante el virreinato, funcionó el Protomedicato del Río de la Plata,
+          la Real Imprenta de Niños Expósitos y la primera escuela de medicina,
+          entre otras actividades.
           <br></br>
           <br></br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ya en la época republicana, fue espacio
-          para las primeras aulas de la Universidad de Buenos Aires y el Museo
-          Público.
+          Ya en la época republicana, fue espacio para las primeras aulas de la
+          Universidad de Buenos Aires y el Museo Público.
           <br></br>
           <br></br>
         </p>
@@ -86,16 +85,14 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
             Galerias Altas
           </h2>
           <p className="seccion__parrafo gAltas">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En el primer piso de Procuraduría,
-            funcionó el Museo Público (hoy, Museo Argentino de Ciencias
-            Naturales Bernardino Rivadavia). Su primer director, Karl Burmeister
-            ocupó el cargo por 30 años y murió a los 85 por un accidente laboral
-            luego de caer por unas escaleras.
+            En el primer piso de Procuraduría, funcionó el Museo Público (hoy,
+            Museo Argentino de Ciencias Naturales Bernardino Rivadavia). Su
+            primer director, Karl Burmeister ocupó el cargo por 30 años y murió
+            a los 85 por un accidente laboral luego de caer por unas escaleras.
             <br></br>
             <br></br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Al mismo tiempo y hasta principios de
-            la década de 1970, funcionaron aulas y salones de la Facultad de
-            Ciencias Exactas y Naturales.
+            Al mismo tiempo y hasta principios de la década de 1970, funcionaron
+            aulas y salones de la Facultad de Ciencias Exactas y Naturales.
           </p>
           <div
             onClick={() =>
@@ -143,11 +140,10 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
         </div>
         <div className="seccion__galeriasBajas--parrafo">
           <p className="seccion__parrafo gBajas">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En este lugar se vivió la Noche de los
-            Bastones Largos, un desalojo violento de profesores, estudiantes y
-            graduadxs que protestaban pacíficamente contra de la intervención
-            universitaria que ordenó el gobierno de facto de Juan Carlos
-            Onganía.
+            En este lugar se vivió la Noche de los Bastones Largos, un desalojo
+            violento de profesores, estudiantes y graduadxs que protestaban
+            pacíficamente contra de la intervención universitaria que ordenó el
+            gobierno de facto de Juan Carlos Onganía.
           </p>
         </div>
       </div>

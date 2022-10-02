@@ -13,7 +13,7 @@ ul li {
 }
 
 .navBar__menu {
-  /*   top: 40px; */
+  top: 0 !important;
   position: relative;
   padding: 0 10px;
   min-width: 1200px;

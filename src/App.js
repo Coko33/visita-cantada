@@ -16,6 +16,7 @@ import {
 import SalaArana from "./secciones/SalaArana";
 import Procuraduria from "./secciones/Procuraduria";
 import Exactas from "./secciones/Exactas";
+import Laboratorio from "./secciones/Laboratorio";
 import PaginaConstruccion from "./secciones/PaginaContruccion";
 import { useState } from "react";
 import Dimensions from "./components/Dimensions";
@@ -25,7 +26,6 @@ function App() {
   /*(scrollToGA) => !scrollToGA*/
   const resetScroll = () => {
     setScrollToGA(false);
-    console.log("entra");
   };
   return (
     <>
@@ -81,6 +81,17 @@ function App() {
                 <Header />
                 <Nav />
                 <Exactas />
+              </>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/laboratorio"
+            element={
+              <>
+                <Header />
+                <Nav />
+                <Laboratorio />
               </>
             }
           ></Route>

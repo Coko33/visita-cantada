@@ -5,7 +5,7 @@ import useWindowDimensions from "../hooks/useWindowDimensions";
 import { Animated } from "react-animated-css";
 import { useModal } from "./../hooks/useModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.css";
 
 export default function Nav({ manejarScroll }) {
@@ -53,7 +53,7 @@ export default function Nav({ manejarScroll }) {
   return (
     <>
       <div className="bars" onClick={toggleMenu}>
-        <FontAwesomeIcon className="bars-icon" icon={faLayerGroup} />
+        <FontAwesomeIcon className="bars-icon" icon={faBars} />
       </div>
 
       <Animated
@@ -133,7 +133,7 @@ export default function Nav({ manejarScroll }) {
             </NavLink>
           </li>
           <li className="navBar__menuItem">
-            <NavLink to="/pagina">
+            <NavLink to="/laboratorio">
               <div className="navBar__textContainer">Laboratorio</div>
             </NavLink>
           </li>

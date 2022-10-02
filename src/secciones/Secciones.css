@@ -2,7 +2,6 @@
   position: relative;
   margin-bottom: 300px;
 }
-
 .seccion h1,
 .seccion h2 {
   display: inline-block;
@@ -11,25 +10,21 @@
   color: #fff;
   text-decoration: none;
 }
-
 .seccion h1 {
   position: relative;
   left: calc(12.5% + 10px);
   font-size: 70px;
 }
-
 .seccion h2 {
   position: relative;
   font-size: 50px;
   margin: 0;
 }
-
 .seccion__galeriasAltas {
   position: absolute;
   left: calc(50% + 30px);
   bottom: 460px; /*esto*/
 }
-
 .seccion h1:after {
   content: "";
   width: 100%;
@@ -63,7 +58,8 @@
   position: relative;
   color: #fff;
   left: calc(12.5% + 10px);
-  width: calc(37.5% - 20px);
+  width: calc(37.5% - 220px);
+  margin-top: 0 !important;
 }
 
 .seccion__parrafo.gAltas {
@@ -139,7 +135,7 @@
 .videoHome--salaArana1 {
   position: relative;
   flex-direction: column;
-  top: 120px;
+  top: 160px;
   left: 33.3%;
   width: 66.6%;
   margin-bottom: 20px;
@@ -148,8 +144,8 @@
 
 .videoHome--salaArana2 {
   position: relative;
-  top: 120px;
-  left: 33.3%;
+  top: 160px;
+  left: 20%;
   width: 66.6%;
   margin-bottom: 40px;
   margin-left: 0px;
@@ -159,13 +155,13 @@
 .columnas {
   position: relative;
   width: 500px;
-  top: 60px; /*esto*/
+  top: 90px; /*esto*/
   left: calc(33.3% + 20px);
 }
 .seccion__titulo--columnas {
   position: absolute;
   left: 0px;
-  top: 50px;
+  top: 80px;
   z-index: 7;
 }
 
@@ -179,11 +175,19 @@
   border-style: solid;
 }
 
-.seccion__imagen2 {
-  position: absolute;
+.seccion__parrafo--columnas {
+  position: relative;
+  color: #fff;
   left: 0;
+  top: 90px;
   width: 100%;
-  top: 140px;
+}
+
+.seccion__imagen2 {
+  position: absolute !important;
+  left: 0 !important;
+  width: 100% !important;
+  top: 350px;
   z-index: 0;
   filter: brightness(60%) contrast(180%);
   -webkit-filter: brightness(80%) contrast(120%);
@@ -191,14 +195,87 @@
 
 .videoHome--salaArana3 {
   position: relative;
-  top: 410px;
-  left: calc(33.3% - 50px);
+  top: 210px;
+  left: -150px;
   width: 66.6%;
 }
 
-/*EXACTAS*/
-.exactas h1 {
+/*Archivo*/
+.Archivo {
+  position: relative;
+  top: -250px;
+  width: 66.6%;
+  left: 12.5%;
+  height: 400px;
+}
+.Archivo__titulo {
+  position: relative;
+  font-size: 70px;
+  display: inline-block;
+  margin: 0;
+  font-family: BrlwSC_Bold;
   color: #fff;
+  text-decoration: none;
+}
+.Archivo__titulo::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-width: 0 0 4px;
+  border-style: solid;
+}
+.Archivo__parrafo {
+  position: relative;
+  color: #fff;
+  left: 0;
+  width: calc(47.5% - 20px);
+}
+.videoHome--archivo {
+  width: 40%;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+}
+/*PATIO*/
+.Patio {
+  position: relative;
+  top: -250px;
+  width: 66.6%;
+  left: 12.5%;
+  height: 400px;
+}
+.Patio__titulo {
+  position: relative;
+  font-size: 70px;
+  display: inline-block;
+  margin: 0;
+  font-family: BrlwSC_Bold;
+  color: #fff;
+  text-decoration: none;
+}
+.Patio__titulo::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-width: 0 0 4px;
+  border-style: solid;
+}
+.Patio__parrafo {
+  position: relative;
+  color: #fff;
+  left: 0;
+}
+.Patio__cajaTexto {
+  position: absolute;
+  left: 42%;
+}
+.videoHome--patio {
+  width: 40%;
+  top: 20px;
 }
 
 @media (max-width: 1440px) {
