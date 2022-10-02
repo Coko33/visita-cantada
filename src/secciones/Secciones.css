@@ -277,6 +277,8 @@
   top: 20px;
 }
 
+
+
 @media (max-width: 1440px) {
   .seccion {
     width: calc(100vw - 40px);
@@ -352,16 +354,13 @@
   .seccion__titulo--gBajas:after {
     color: #fff;
     content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  border-width: 0 0 4px;
-  border-style: solid;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-width: 0 0 4px;
+    border-style: solid;
   }
-  /* .seccion__galeriasBajas--parrafo {
-    
-  } */
   .seccion__parrafo.gBajas{
     position: relative;
     top: 80px;
@@ -371,3 +370,129 @@
     line-height: 16px;
   }
 }
+@media (min-width: 380px) {
+  .seccion__galeriasAltas {
+    top: 110px;  
+  }
+  .seccion__galeriasBajas--titulo {
+      top: 100px;
+  }
+  .seccion__parrafo.gBajas {
+      top: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .seccion__parrafo, .seccion__parrafo--columnas, .Archivo__parrafo  {
+    width: 100%;
+    left: 0;
+    top: 20px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .Archivo__titulo, .seccion__titulo--columnas {
+    position: relative;
+    font-size: 30px;
+    color: #fff;
+    top: 0;
+    margin: 0;
+    left: 0;
+  }
+  .videoHome--procu1 {
+    width: 80%;
+    left: 10%;
+    top: 310px;
+  }
+
+  .videoHome--salaArana1 {
+    float: right;
+    left: auto;
+    top: 270px;
+  }
+  .videoHome--salaArana2 {
+    top: 230px;
+    left: 0;
+  }
+  .seccion__containerVideos {
+    position: relative;
+    top: -360px;
+    width: 100%;
+    left: 0;
+  }
+  .columnas {
+    position: relative;
+    top: 210px;
+    width: 100%;
+    left: 0;
+  }
+  .seccion__titulo--columnas {
+    font-size: 30px;
+    top: 0;
+    margin: 0;
+    left: 0;
+  }
+  .seccion__parrafo--columnas {
+    top: 10px;
+  }
+  .seccion__imagen2 {
+    position: relative;
+    top: 160px;
+  }
+  .videoHome--salaArana3 {
+    top: 430px;
+    left: 25%;
+  }
+  .Archivo {
+    position: relative;
+    top: -200px;
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+  .videoHome--archivo {
+    position: relative;
+    left: 20%;
+    width: 80%;
+  }
+  .videoHome--patio {
+    position: relative;
+    top: 230px;
+    left: 10%;
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .Patio {
+    position: relative;
+    top: -60px;
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+  .Patio__cajaTexto {
+    left: 0;
+  }
+  .Patio__titulo {
+    font-size: 30px;
+  top: 0;
+  margin: 0;
+  left: 0;
+  }
+  .Patio__parrafo {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    margin:0;
+    top: 20px;
+    left: 0;
+  }
+  .seccion__galeriasAltas {
+    top: -50px;  
+  }
+  .seccion__galeriasBajas--titulo{
+    top:-50px;
+  }
+  .seccion__parrafo.gBajas{
+    top:-30px;
+  }
+}
+
+

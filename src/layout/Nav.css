@@ -94,8 +94,8 @@ ul li {
   line-height: 59px;
   height: 59px;
   top: 0;
-  right: 0;
-  left: auto;
+  left: 0;
+  right: auto;
   margin: 20px;
   display: none;
   color: rgb(255, 255, 255);
@@ -106,7 +106,7 @@ ul li {
   font-size: 30px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .bars {
     display: block;
   }

@@ -59,3 +59,46 @@
   width: 66.6%;
   margin-bottom: 20px;
 }
+
+@media (max-width: 600px) { 
+  .exactas {
+    width: calc(100vw - 40px);
+    left: 20px;
+  }
+  .exactas__titulo {
+    font-size: 30px;
+    top: 0;
+    margin: 0;
+    left: 0;
+  }
+  .exactas__parrafo {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    margin:0;
+    top: 20px;
+    left: 0;
+  }
+  .exactas__imagen1 {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+  .exactas__containerVideos {
+    position: relative;
+    top: 0;
+    width: 100%;
+    left: 0;
+  }
+  .videoHome--exactas {
+    position: relative;
+    flex-direction: column;
+    top: -20px;
+    left: 15%;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+}

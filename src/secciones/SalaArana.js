@@ -127,9 +127,11 @@ export default function SalaArana() {
             para las y los prisioneros de la sublevación de Oruro en 1781. Al
             compartir el espacio con una cárcel, las casas redituantes se
             volvieron muy difíciles de alquilar.
-            <br></br>En 1839, ya construida la Sala de Representantes, fue
-            asesinado a metros de este patio el ex gobernador de la provincia de
-            Buenos Aires, Manuel Vicente Maza.
+            <br></br>
+            <br></br>
+            En 1839, ya construida la Sala de Representantes, fue asesinado a
+            metros de este patio el ex gobernador de la provincia de Buenos
+            Aires, Manuel Vicente Maza.
           </p>
         </div>
         <VideoWraper
@@ -137,7 +139,7 @@ export default function SalaArana() {
             "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Otml_mariposa_loop.mp4"
           }
           clase={"videoHome videoHome--patio"}
-          titulo={"Orquesta Típica Manzana de las Luces"}
+          titulo={"OT Manzana de las Luces"}
           subtitulo={"La mariposa"}
           linkTo={"#"}
         ></VideoWraper>

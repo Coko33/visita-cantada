@@ -42,11 +42,11 @@
 .tituloContainer h1 {
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .header {
     width: calc(100vw - 40px);
     margin: 20px;
-    justify-content: start;
+    justify-content: end;
     align-items: center;
   }
   .tituloContainer {
