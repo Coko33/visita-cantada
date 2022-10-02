@@ -33,8 +33,8 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
             linkVideo={linkVideo}
           ></ModalVideos>
         )}
-        <h1>Patio de la Procuraduria</h1>
-        <p className="seccion__parrafo">
+        <h1 className="seccion__titulo">Patio de la Procuraduria</h1>
+        <p className="seccion__parrafo seccion__parrafo--PP">
           Construido en 1730, los planos de este sitio se adjudican al
           arquitecto jesuita Juan Bautista Prímoli. Fue la sede administrativa
           del comercio generado por las Misiones Jesuíticas. Funcionó aquí un

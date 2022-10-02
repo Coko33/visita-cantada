@@ -23,7 +23,7 @@ export default function SalaArana() {
             linkVideo={linkVideo}
           ></ModalVideos>
         )}
-        <h1>Sala Araña</h1>
+        <h1 className="seccion__titulo">Sala Araña</h1>
         <p className="seccion__parrafo">
           Estas salas fueron parte de un conjunto de viviendas de renta que el
           Virrey Juan José de Vértiz y Salcedo encargó construir al arquitecto

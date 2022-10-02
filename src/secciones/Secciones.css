@@ -2,20 +2,20 @@
   position: relative;
   margin-bottom: 300px;
 }
-.seccion h1,
-.seccion h2 {
+.seccion__titulo,
+.seccion__titulo--gAltas, .seccion__titulo--gBajas {
   display: inline-block;
   margin: 120px 0 20px 0;
   font-family: BrlwSC_Bold;
   color: #fff;
   text-decoration: none;
 }
-.seccion h1 {
+.seccion__titulo {
   position: relative;
   left: calc(12.5% + 10px);
   font-size: 70px;
 }
-.seccion h2 {
+.seccion__titulo--gAltas {
   position: relative;
   font-size: 50px;
   margin: 0;
@@ -25,7 +25,7 @@
   left: calc(50% + 30px);
   bottom: 460px; /*esto*/
 }
-.seccion h1:after {
+.seccion__titulo:after {
   content: "";
   width: 100%;
   position: absolute;
@@ -53,7 +53,6 @@
   border-width: 0 0 4px;
   border-style: solid;
 }
-
 .seccion__parrafo {
   position: relative;
   color: #fff;
@@ -279,22 +278,96 @@
 }
 
 @media (max-width: 1440px) {
-  /* .seccion {
-    background-color: blueviolet;
-  } */
-
+  .seccion {
+    width: calc(100vw - 40px);
+    left: 20px;
+  }
+  .seccion__titulo {
+    font-size: 30px;
+    margin: 0;
+    left: 0;
+  } 
+  .seccion__parrafo.seccion__parrafo--PP {
+    top: 20px;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .seccion__imagen1 {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .videoHome--procu1 {
+    width: 200%;
+    left: -40%;
+    top: 550px;
+  }
   .seccion__galeriasAltas {
-    bottom: 380px;
+    position: relative;
+    left: 0;
+    top: 80px;
+    bottom: inherit;
   }
-
+  .seccion__titulo--gAltas{
+    font-size: 30px;
+    margin: 0;
+    left: 0;
+  }
+  .seccion__parrafo.gAltas {
+    top: 20px;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+  }
   .videoHome--procu2 {
-    top: 300px;
+    position: relative;
+    top:20px;
+    width: 80%;
+  }
+  .videoHome--procu3 {
+    position: relative;
+    float: right;
+    top:-20px;
+    left: auto;
+    right: 0;
+    width: 80%;
+  }
+  .seccion__galeriasBajas--titulo {
+    position: relative;
+    width: max-content;
+    top: 60px;
+    left:0;
   }
 
-  .videoHome--procu3 {
-    top: 520px; /*esto*/
-    left: -50px;
-    width: 50%;
-    margin-bottom: 20px;
+  .seccion__titulo--gBajas {
+    position: relative;
+    left: 0;
+    font-size: 30px;
+    color: #fff;
+    margin: 0;
+  }
+  .seccion__titulo--gBajas:after {
+    color: #fff;
+    content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-width: 0 0 4px;
+  border-style: solid;
+  }
+  /* .seccion__galeriasBajas--parrafo {
+    
+  } */
+  .seccion__parrafo.gBajas{
+    position: relative;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
