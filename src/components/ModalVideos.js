@@ -10,15 +10,15 @@ export default function ModalVideos({
   return (
     <>
       <div className={`modal ${isOpenModalYT && "active"}`}>
-        <div className="modal__cerrar">
-          <button onClick={() => closeModalYT()}>x</button>
-        </div>
         <iframe
           className="modal__iframe"
           title={titulo}
           src={`${linkVideo}?autoplay=1&controls=1`}
           allow="autoplay"
         ></iframe>
+        <div className="modal__cerrar">
+          <button onClick={() => closeModalYT()}>x</button>
+        </div>
       </div>
     </>
   );

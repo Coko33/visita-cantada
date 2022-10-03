@@ -1,18 +1,17 @@
 .modal {
-  position: absolute;
-  top: -194px;
+  position: fixed;
+  top: 0;
+  left: 10%;
   display: none;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: auto;
   z-index: 2000;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.379);
   opacity: 1;
 }
-
 .modal.active {
   display: block;
 }
-
 .modal__iframe {
   position: relative;
   width: 80%;

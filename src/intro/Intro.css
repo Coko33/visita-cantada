@@ -24,18 +24,6 @@
   background-color: black;
 }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-}
-
 .intro__tituloContainer h2 {
   position: relative;
   margin: 6px auto;
@@ -47,12 +35,6 @@
   background-color: black;
   color: white;
   text-align: center;
-  opacity: 0;
-  animation: aparecer 3s ease-in-out 3s infinite;
-}
-
-.intro__tituloContainer h2:hover {
-  cursor: pointer;
   opacity: 1;
 }
 
@@ -66,10 +48,8 @@
 
 .videoIntro {
   width: 100%;
-  -webkit-filter: grayscale(100%) blur(2px);
-  filter: grayscale(100%) blur(2px);
-  /*   border-radius: 10px; */
-  /* box-shadow: 0 0 15px rgb(0, 0, 0); */
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
 }
 
 .span_black {
@@ -92,5 +72,11 @@
 
   .intro__tituloContainer h1 {
     font-size: 72px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro__videoContainer {
+    width: 100vw;
   }
 }

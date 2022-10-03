@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useModal } from "../hooks/useModal";
 import VideoWraper from "../components/VideoWraper";
+import ModalVideos from "../components/ModalVideos";
 import "./Exactas.css";
 export default function Exactas() {
   const [isOpenModalYT, openModalYT, closeModalYT] = useModal(false);
@@ -14,6 +15,13 @@ export default function Exactas() {
   return (
     <>
       <div className="exactas">
+        {isOpenModalYT && (
+          <ModalVideos
+            closeModalYT={closeModalYT}
+            isOpenModalYT={isOpenModalYT}
+            linkVideo={linkVideo}
+          ></ModalVideos>
+        )}
         <h1 className="exactas__titulo">Exactas</h1>
         <p className="exactas__parrafo">
           Hasta 1971, en este lugar funcionó la Facultad de Ciencias Exactas y
@@ -47,7 +55,7 @@ export default function Exactas() {
         <div className="exactas__containerVideos">
           <div
             onClick={() =>
-              abrirVideo("https://www.youtube.com/embed/HHPUZknrbfY")
+              abrirVideo("https://www.youtube.com/embed/pZWs-7UK38Q")
             }
           >
             <VideoWraper
@@ -61,7 +69,6 @@ export default function Exactas() {
                 "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/GuapoBlur.jpg"
               }
               linkTo="#"
-              /* linkTo={"https://www.youtube.com/watch?v=gA6WGYQWrKc"} */
             ></VideoWraper>
           </div>
         </div>

@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import VideoWraper from "../components/VideoWraper";
 import "./../App.css";
 import "./Intro.css";
 import { useNavigate } from "react-router-dom";
+import "@animxyz/core";
+import { XyzTransition } from "@animxyz/react";
 
 export default function Intro() {
   const navigate = useNavigate();
+
   return (
     <>
       <div className="intro__videoContainer">
@@ -24,7 +27,7 @@ export default function Intro() {
         <h1>
           <span className="span_black">Visita</span> cantada
         </h1>
-        <h2 onClick={() => navigate("/home")}>comenzar</h2>
+        <h2 onClick={() => navigate("/procuraduria")}>comenzar</h2>
       </div>
     </>
   );

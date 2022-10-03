@@ -30,7 +30,7 @@ export default function Laboratorio() {
         <div className="Laboratorio__containerVideos">
           <div
             onClick={() =>
-              abrirVideo("https://www.youtube.com/embed/HHPUZknrbfY")
+              abrirVideo("https://www.youtube.com/embed/pZWs-7UK38Q")
             }
           >
             <VideoWraper
