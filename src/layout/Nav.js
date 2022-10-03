@@ -10,7 +10,7 @@ import "./Nav.css";
 
 export default function Nav({ manejarScroll }) {
   let windowDimensions = useWindowDimensions();
-  const [isOpenMenu, openMenu, closeMenu] = useModal();
+  const [isOpenMenu, openMenu, closeMenu] = useModal(false);
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
   const [activeProcu, setActiveProcu] = useState(false);
@@ -20,6 +20,9 @@ export default function Nav({ manejarScroll }) {
     if (windowDimensions.width > 599) {
       openMenu();
       setIsActiveMenu(true);
+    } else {
+      closeMenu();
+      setIsActiveMenu(false);
     }
   }, []);
 

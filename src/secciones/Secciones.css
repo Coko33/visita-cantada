@@ -1,3 +1,4 @@
+
 .seccion {
   position: relative;
   margin-bottom: 300px;
@@ -23,6 +24,7 @@
 .seccion__galeriasAltas {
   position: absolute;
   left: calc(50% + 30px);
+  top: 500px;
   bottom: 460px; /*esto*/
 }
 .seccion__titulo:after {
@@ -57,15 +59,14 @@
   position: relative;
   color: #fff;
   left: calc(12.5% + 10px);
-  width: calc(37.5% - 220px);
+  width: calc(37.5% - 20px);
   margin-top: 0 !important;
 }
-
 .seccion__parrafo.gAltas {
+  top:20px;
   left: 0;
   width: 66.6%;
 }
-
 .seccion__imagen1 {
   position: relative;
   color: #fff;
@@ -74,19 +75,20 @@
   filter: brightness(60%) contrast(180%);
   -webkit-filter: brightness(80%) contrast(120%);
 }
-
 .seccion__containerVideos {
   position: absolute;
   top: 0;
   width: 37.5%;
   left: 37.5%;
 }
-
 .seccion__galeriasBajas--titulo {
   position: relative;
+  width: 66.6%;
   left: calc(12.5% + 10px);
+  position: relative;
+  font-size: 30px;
+  margin: 0;
 }
-
 .seccion__parrafo.gBajas {
   width: 500px;
 }
@@ -112,8 +114,8 @@
 .videoHome--procu3 {
   position: absolute;
   flex-direction: column;
-  top: 560px; /*esto*/
-  left: -200px;
+  top: 460px; /*esto*/
+  left: -300px;
   width: 50%;
   margin-bottom: 20px;
 }
@@ -159,8 +161,10 @@
 }
 .seccion__titulo--columnas {
   position: absolute;
+  color: #fff;
+  font-size: 50px;
   left: 0px;
-  top: 80px;
+  top: 0px;
   z-index: 7;
 }
 
@@ -178,7 +182,7 @@
   position: relative;
   color: #fff;
   left: 0;
-  top: 90px;
+  top: 120px;
   width: 100%;
 }
 
@@ -247,7 +251,7 @@
 }
 .Patio__titulo {
   position: relative;
-  font-size: 70px;
+  font-size: 50px;
   display: inline-block;
   margin: 0;
   font-family: BrlwSC_Bold;
@@ -270,11 +274,12 @@
 }
 .Patio__cajaTexto {
   position: absolute;
-  left: 42%;
+  left: 45%;
+  top: 40px;
 }
 .videoHome--patio {
   width: 40%;
-  top: 20px;
+  top: 60px;
 }
 
 
@@ -370,7 +375,8 @@
     line-height: 16px;
   }
 }
-@media (min-width: 380px) {
+
+/* @media (min-width: 380px) {
   .seccion__galeriasAltas {
     top: 110px;  
   }
@@ -380,7 +386,8 @@
   .seccion__parrafo.gBajas {
       top: 120px;
   }
-}
+}  */
+
 @media (max-width: 600px) {
   .seccion__parrafo, .seccion__parrafo--columnas, .Archivo__parrafo  {
     width: 100%;
@@ -389,7 +396,6 @@
     font-size: 14px;
     line-height: 16px;
   }
-
   .Archivo__titulo, .seccion__titulo--columnas {
     position: relative;
     font-size: 30px;
@@ -403,7 +409,6 @@
     left: 10%;
     top: 310px;
   }
-
   .videoHome--salaArana1 {
     float: right;
     left: auto;
