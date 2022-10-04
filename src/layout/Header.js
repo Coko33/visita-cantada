@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <div className="header">
         <div className="tituloContainer tituloContainer--header">
-          <NavLink to="/home">
+          <NavLink to="/">
             <h1>
               <span className="span_black">Visita</span> cantada
             </h1>

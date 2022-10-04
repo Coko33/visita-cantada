@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97d96650.css",
+    "main.js": "/static/js/main.f6a7679d.js",
+    "static/js/787.e51fb6f1.chunk.js": "/static/js/787.e51fb6f1.chunk.js",
+    "static/media/BarlowSemiCondensed-BlackItalic_Manzana.woff": "/static/media/BarlowSemiCondensed-BlackItalic_Manzana.f4c6076de1ef81e0c9b0.woff",
+    "static/media/BarlowSemiCondensed-BoldItalic_Manzana.woff": "/static/media/BarlowSemiCondensed-BoldItalic_Manzana.4d954baf5f99805337f8.woff",
+    "static/media/Barlow-BoldItalic_Manzana.woff": "/static/media/Barlow-BoldItalic_Manzana.82c7a8ce6d7b77a433d1.woff",
+    "static/media/BarlowSemiCondensed-LightItalic_Manzana.woff": "/static/media/BarlowSemiCondensed-LightItalic_Manzana.c048a43d74ff6ec9d37f.woff",
+    "static/media/BarlowSemiCondensed-ThinItalic_Manzana.woff": "/static/media/BarlowSemiCondensed-ThinItalic_Manzana.36f3cdf653ec0d0bd32d.woff",
+    "static/media/BarlowSemiCondensed-ExtraBold_Manzana.woff": "/static/media/BarlowSemiCondensed-ExtraBold_Manzana.0280c14836a9bad13f0e.woff",
+    "static/media/BarlowSemiCondensed-Bold_Manzana.woff": "/static/media/BarlowSemiCondensed-Bold_Manzana.d9e644c6c1b20a32730f.woff",
+    "static/media/BarlowSemiCondensed-Regular_Manzana.woff": "/static/media/BarlowSemiCondensed-Regular_Manzana.582f786461608ec252b9.woff",
+    "static/media/BarlowSemiCondensed-Light_Manzana.woff": "/static/media/BarlowSemiCondensed-Light_Manzana.54691568ed9610fa53ba.woff",
+    "static/media/BarlowCondensed-Regular_Manzana.woff": "/static/media/BarlowCondensed-Regular_Manzana.7b76c2a119972cdbc10c.woff",
+    "static/media/BarlowSemiCondensed-Black_Manzana.woff": "/static/media/BarlowSemiCondensed-Black_Manzana.7f92d894a4e285c6307f.woff",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "static/media/flecha.svg": "/static/media/flecha.9f5735c25af2bfb0c81a568538f709bd.svg",
+    "main.97d96650.css.map": "/static/css/main.97d96650.css.map",
+    "main.f6a7679d.js.map": "/static/js/main.f6a7679d.js.map",
+    "787.e51fb6f1.chunk.js.map": "/static/js/787.e51fb6f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97d96650.css",
+    "static/js/main.f6a7679d.js"
+  ]
+}

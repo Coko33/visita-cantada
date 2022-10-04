@@ -55,6 +55,12 @@
 .span_black {
   font-family: BrlwSC_Black !important;
 }
+.play-icon {
+  color: rgb(255, 255, 255);
+  margin-left: 6px;
+  margin-bottom: -2px;
+}
+
 
 @media (min-width: 600px) {
   .intro__videoContainer {
@@ -76,7 +82,26 @@
 }
 
 @media (max-width: 600px) {
-  .intro__videoContainer {
-    width: 100vw;
+  .intro__videoContainer, .intro__tituloContainer  {
+    width: calc(100vw - 20px);
+    top:0;
+    left:10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro__tituloContainer h1 {
+    font-size: 40px;
+    padding: 0 10px 5px 10px;
+  }
+  .intro__tituloContainer h2 {
+    font-size: 20px;
+    line-height: 35px;
+    padding-top: 2px;
+  }
+  .play-icon {
+    margin-left: 6px;
+    margin-bottom: -1px;
   }
 }
