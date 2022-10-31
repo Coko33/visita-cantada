@@ -1,7 +1,6 @@
 .videoIntro h2 {
   display: none;
 }
-
 .intro__tituloContainer {
   position: relative;
   box-sizing: border-box;
@@ -14,7 +13,6 @@
   justify-content: center;
   flex-direction: column;
 }
-
 .intro__tituloContainer h1 {
   color: white;
   text-align: center;
@@ -23,7 +21,6 @@
   margin: 0;
   background-color: black;
 }
-
 .intro__tituloContainer h2 {
   position: relative;
   margin: 6px auto;
@@ -37,21 +34,21 @@
   text-align: center;
   opacity: 1;
 }
-
 .intro__videoContainer {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 500%;
   margin: auto;
   top: -70px;
   left: -200%;
 }
-
 .videoIntro {
   width: 100%;
   -webkit-filter: blur(2px);
   filter: blur(2px);
 }
-
 .span_black {
   font-family: BrlwSC_Black !important;
 }

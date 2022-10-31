@@ -1,10 +1,10 @@
 .modal {
   position: fixed;
   top: 0;
-  left: 10%;
+  left: 0;
   display: none;
-  width: 80%;
-  height: auto;
+  width: 100%;
+  height: 100vh;
   z-index: 2000;
   background-color: rgba(0, 0, 0, 0.379);
   opacity: 1;
@@ -14,8 +14,71 @@
 }
 .modal__iframe {
   position: relative;
-  width: 80%;
-  left: 10%;
-  height: 800px;
+  width: 74%;
+  left: 13%;
+  height: 90vh;
+  top: 5vh;
+  margin: auto;
   border: none;
+}
+.modal__cerrar{
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  top: calc(50% - 50px);
+  left: 13%;
+}
+.modal__iframe:hover ~ div {
+  display: flex;
+}
+.modal__cerrar:hover {
+  display: flex;
+}
+.modal__cerrar button {
+  position: relative;
+  margin: 6px auto;
+  padding: 0 15px 5px 7px;
+  display: block;
+  font-family: BrlwSC_Light;
+  font-size: 26px;
+  line-height: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  opacity: 1;
+  border: none;
+}
+.modal__cerrar button:hover {
+  cursor: pointer;
+}
+.volver-icon {
+  color: rgb(255, 255, 255);
+  margin-left: 6px;
+  margin-right: 7px;
+  margin-bottom: -2px;
+}
+@media (max-width: 600px) {
+  .modal__iframe {
+    width: 90%;
+    left: 5%;
+    height: 50vh;
+    top: 25vh;
+
+  }
+  .modal__cerrar{
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    top: 75%;
+    left: 0%;
+  }
+  .modal__cerrar button {
+    margin: 0 20px;
+  }
 }

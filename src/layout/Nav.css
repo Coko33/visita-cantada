@@ -8,9 +8,9 @@ ul li {
   background: #666666;
 }
 
-.navBar.isActive {
+/* .navBar.isActive {
   display: block;
-}
+} */
 
 .navBar__menu {
   top: 0 !important;
@@ -116,7 +116,7 @@ ul li {
     min-width: inherit;
     width: 100vw;
     left:0;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     padding: 50px 0;
   }
   .navBar__subMenu {
@@ -145,5 +145,19 @@ ul li {
   }
   .navBar__textContainer {
     line-height: 46px;
+  }
+}
+ 
+@media (min-width: 601px) and (max-width: 1150px) {
+  .navBar__menu {
+    min-width: 800px;
+    width: 980px;
+    left: calc(50% - 490px)
+  }
+  .navBar__textContainer {
+    font-size: 22px;
+  }
+  .navBar__submenuItem {
+    font-size: 16px;
   }
 }

@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { useModal } from "../hooks/useModal";
 import VideoWraper from "../components/VideoWraper";
+import ModalVideos from "../components/ModalVideos";
+import useWindowDimensions from "./../hooks/useWindowDimensions";
+
 import "./Laboratorio.css";
 export default function Laboratorio() {
   const [isOpenModalYT, openModalYT, closeModalYT] = useModal(false);
   const [linkVideo, setLinkVideo] = useState();
+
+  let windowDimensions = useWindowDimensions();
 
   const abrirVideo = (linkTo) => {
     openModalYT();
@@ -14,10 +19,19 @@ export default function Laboratorio() {
   return (
     <>
       <div className="Laboratorio">
+        {isOpenModalYT && (
+          <ModalVideos
+            closeModalYT={closeModalYT}
+            isOpenModalYT={isOpenModalYT}
+            linkVideo={linkVideo}
+          ></ModalVideos>
+        )}
         <img
           className="Laboratorio__imagen1"
           src={
-            "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/laboratorio.jpg"
+            windowDimensions.width > 600
+              ? "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/laboratorio.jpg"
+              : "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/laboratorio_m.png"
           }
         ></img>
         <h1 className="Laboratorio__titulo">Laboratorio</h1>
@@ -30,7 +44,7 @@ export default function Laboratorio() {
         <div className="Laboratorio__containerVideos">
           <div
             onClick={() =>
-              abrirVideo("https://www.youtube.com/embed/pZWs-7UK38Q")
+              abrirVideo("https://www.youtube.com/embed/dM4Zr86wQPU")
             }
           >
             <VideoWraper
@@ -41,14 +55,14 @@ export default function Laboratorio() {
               titulo={"Electrochongo"}
               subtitulo={"Música de putos"}
               poster={
-                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/GuapoBlur.jpg"
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/EchBlur2.jpg"
               }
               linkTo="#"
             ></VideoWraper>
           </div>
           <div
             onClick={() =>
-              abrirVideo("https://www.youtube.com/embed/HHPUZknrbfY")
+              abrirVideo("https://www.youtube.com/embed/PjJttpxhK0c")
             }
           >
             <VideoWraper
@@ -59,7 +73,7 @@ export default function Laboratorio() {
               titulo={"Electrochongo"}
               subtitulo={"Te conozco mas sin ropa"}
               poster={
-                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/GuapoBlur.jpg"
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/EchBlur1.jpg"
               }
               linkTo="#"
             ></VideoWraper>

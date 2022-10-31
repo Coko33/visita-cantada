@@ -1,0 +1,8 @@
+.seccion, .exactas, .Laboratorio, .representantes {
+    top: -80px;
+}
+@media(max-width: 600px) {
+    .seccion, .exactas, .Laboratorio, .representantes {
+        top: inherit;
+    }   
+}

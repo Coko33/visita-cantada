@@ -39,13 +39,6 @@ export default function Nav({ manejarScroll }) {
     }
   };
 
-  /*  const navegar = () => {
-    if (windowDimensions.width < 600) {
-      closeMenu();
-      setTimeout(() => setIsActiveMenu(false), 400);
-    }
-  }; */
-
   const activarProcu = (e) => {
     setActiveProcu(true);
   };
@@ -72,7 +65,6 @@ export default function Nav({ manejarScroll }) {
       setActiveCasas(false);
     }
   };
-  /*${isActiveMenu && "isActive"}*/
 
   return (
     <>
@@ -80,9 +72,9 @@ export default function Nav({ manejarScroll }) {
         <FontAwesomeIcon className="bars-icon" icon={faBars} />
       </div>
 
-      <XyzTransition appear mode="out-in">
+      <XyzTransition mode="out-in">
         {isOpenMenu && (
-          <div xyz="fade right-100%" className={`navBar  `}>
+          <div xyz="right-100%" className="navbar">
             <ul className="navBar__menu">
               <li
                 className="navBar__menuItem"
@@ -111,8 +103,7 @@ export default function Nav({ manejarScroll }) {
                       Galerías Altas
                     </li>
                   </NavLink>
-
-                  <NavLink to="/pagina">
+                  <NavLink to="/procuraduriaGB">
                     <li
                       onClick={() => {
                         toggleMenu();
@@ -148,27 +139,27 @@ export default function Nav({ manejarScroll }) {
                       Sala Araña
                     </li>
                   </NavLink>
-                  <NavLink to="/pagina">
+                  <NavLink to="/salaAranaColumnas">
                     <li onClick={toggleMenu} className="navBar__submenuItem">
                       Sala Columnas
                     </li>
                   </NavLink>
-                  <NavLink to="/pagina">
+                  <NavLink to="/salaAranaArchivo">
                     <li onClick={toggleMenu} className="navBar__submenuItem">
                       Sala del Archivo
                     </li>
                   </NavLink>
-                  <NavLink to="/pagina">
+                  <NavLink to="/salaAranaSalaRosas">
                     <li onClick={toggleMenu} className="navBar__submenuItem">
                       Sala Rosas
                     </li>
                   </NavLink>
-                  <NavLink to="/pagina">
+                  <NavLink to="/salaAranaPatioRosas">
                     <li onClick={toggleMenu} className="navBar__submenuItem">
                       Patio Rosas
                     </li>
                   </NavLink>
-                  <NavLink to="/pagina">
+                  <NavLink to="/salaAranaRepresentantes">
                     <li onClick={toggleMenu} className="navBar__submenuItem">
                       Patio de Representantes
                     </li>
@@ -176,7 +167,7 @@ export default function Nav({ manejarScroll }) {
                 </ul>
               </li>
               <li onClick={toggleMenu} className="navBar__menuItem">
-                <NavLink to="/pagina">
+                <NavLink to="/representantes">
                   <div className="navBar__textContainer">
                     Sala de Representantes
                   </div>

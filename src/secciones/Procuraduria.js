@@ -4,18 +4,29 @@ import VideoWraper from "../components/VideoWraper";
 import { useModal } from "../hooks/useModal";
 import ModalVideos from "../components/ModalVideos";
 import { useLocation } from "react-router-dom";
+import useWindowDimensions from "./../hooks/useWindowDimensions";
 
-export default function Procuraduria({ scrollToGA, resetScroll }) {
+export default function Procuraduria({ scrollToGA, scrollToGB, resetScroll }) {
   const [isOpenModalYT, openModalYT, closeModalYT] = useModal(false);
   const [linkVideo, setLinkVideo] = useState();
+  let windowDimensions = useWindowDimensions();
   const GA = useRef();
   const GB = useRef();
   scrollToGA && GA.current.scrollIntoView({ behavior: "smooth" });
+  scrollToGB && GB.current.scrollIntoView({ behavior: "smooth" });
   let location = useLocation();
 
   useLayoutEffect(() => {
-    location.pathname === "/procuraduriaGA" &&
-      GA.current.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname === "/procuraduriaGA") {
+      setTimeout(() => {
+        GA.current.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+    if (location.pathname === "/procuraduriaGB") {
+      setTimeout(() => {
+        GB.current.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
   }, []);
 
   const abrirVideo = (linkTo) => {
@@ -55,13 +66,17 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
         </p>
         <img
           className="seccion__imagen1"
-          src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/procu.jpg"
+          src={
+            windowDimensions.width > 600
+              ? "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/procu.jpg"
+              : "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/procu_m.png"
+          }
           alt="imagen del patio de la procuraduría"
         ></img>
         <div className="seccion__containerVideos">
           <div
             onClick={() =>
-              abrirVideo("https://www.youtube.com/embed/HHPUZknrbfY")
+              abrirVideo("https://www.youtube.com/embed/IErTJl1YzN4")
             }
           >
             <VideoWraper
@@ -75,7 +90,6 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
                 "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/GuapoBlur.jpg"
               }
               linkTo="#"
-              /* linkTo={"https://www.youtube.com/watch?v=gA6WGYQWrKc"} */
             ></VideoWraper>
           </div>
         </div>
@@ -96,7 +110,7 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
           </p>
           <div
             onClick={() =>
-              abrirVideo("https://www.youtube.com/embed/HHPUZknrbfY")
+              abrirVideo("https://www.youtube.com/embed/o1tLsORVkkY")
             }
           >
             <VideoWraper
@@ -115,7 +129,7 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
           </div>
           <div
             onClick={() =>
-              abrirVideo("https://www.youtube.com/embed/HHPUZknrbfY")
+              abrirVideo("https://www.youtube.com/embed/FEyYVtiJFxU")
             }
           >
             <VideoWraper
@@ -127,6 +141,25 @@ export default function Procuraduria({ scrollToGA, resetScroll }) {
               subtitulo={"Si te vas"}
               poster={
                 "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/LaFemmeBlur.jpg"
+              }
+              linkTo="#"
+              /* linkTo={"https://www.youtube.com/watch?v=gA6WGYQWrKc"} */
+            ></VideoWraper>
+          </div>
+          <div
+            onClick={() =>
+              abrirVideo("https://www.youtube.com/embed/lMVVD514PG8")
+            }
+          >
+            <VideoWraper
+              source1={
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/SofiaTorres_loop.mp4"
+              }
+              clase={"videoHome videoHome--procu4"}
+              titulo={"Sofia Torres Kosiba"}
+              subtitulo={"Un cancionero luminoso"}
+              poster={
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/KosibaBlur.jpg"
               }
               linkTo="#"
               /* linkTo={"https://www.youtube.com/watch?v=gA6WGYQWrKc"} */

@@ -1,22 +1,22 @@
-.exactas {
+.representantes {
   position: relative;
   left: 12.5%;
   width: 76%;
   height: 400px;
 }
 
-.exactas__titulo {
+.representantes__titulo {
   position: relative;
   font-size: 70px;
   display: inline-block;
-  margin: 120px 0 20px 10px;
+  margin: 120px 0 20px 0px;
   font-family: BrlwSC_Bold;
   color: #fff;
   text-decoration: none;
   z-index: 100;
 }
 
-.exactas__titulo:after {
+.representantes__titulo:after {
   content: "";
   width: 100%;
   position: absolute;
@@ -25,9 +25,9 @@
   border-width: 0 0 4px;
   border-style: solid;
 }
-.exactas__imagen1 {
+.representantes__imagen1 {
   position: absolute;
-  top: 200px;
+  top: 250px;
   margin-left: 100px;
   width: calc(66.6% - 140px);
   left: 33.3%;
@@ -36,43 +36,43 @@
   -webkit-filter: brightness(80%) contrast(120%);
 }
 
-.exactas__parrafo {
+.representantes__parrafo {
   position: relative;
   color: #fff;
-  left: 10px;
-  width: calc(33.3%);
+  left: 0px;
+  width: 39%;
   z-index: 100;
 }
 
-.exactas__containerVideos {
+.representantes__containerVideos {
   position: absolute;
   top: 0;
   width: 50%;
-  left: 37.5%;
+  left: 0%;
 }
 
-.videoHome--exactas {
+.videoHome--representantes {
   position: relative;
   flex-direction: column;
-  top: 140px;
-  left: calc(33.3% + 20px);
+  top: 460px;
+  left: 0%;
   width: 66.6%;
   margin-bottom: 20px;
 }
 
 @media (max-width: 600px) { 
-  .exactas {
+  .representantes {
     width: calc(100vw - 40px);
     left: 20px;
     height: 800px;
   }
-  .exactas__titulo {
+  .representantes__titulo {
     font-size: 30px;
     top: 0;
     margin: 0;
     left: 0;
   }
-  .exactas__parrafo {
+  .representantes__parrafo {
     width: 100%;
     font-size: 14px;
     line-height: 16px;
@@ -81,37 +81,25 @@
     top: 20px;
     left: 0;
   }
-  .exactas__imagen1 {
+  .representantes__imagen1 {
     position: relative;
-    top: -80px;
+    top: 20px;
     width: 100%;
     left: 0;
     margin: 0;
   }
-  .exactas__containerVideos {
+  .representantes__containerVideos {
     position: relative;
-    top: 50px;
+    top: 0;
     width: 100%;
     left: 0;
   }
-  .videoHome--exactas {
+  .videoHome--representantes {
     position: relative;
     flex-direction: column;
-    top: -20px;
-    left: 15%;
+    top: -40px;
+    left: 25%;
     width: 70%;
     margin-bottom: 20px;
   }
-}
-
-@media (min-width: 601px) and (max-width: 1440px) {
-  .exactas__parrafo {
-    font-size: 14px;
-    line-height: 16px;
-    width:35%;
-}
-.exactas__imagen1 {
-  width: 55%;
-  margin-right: -40px;
-}
 }

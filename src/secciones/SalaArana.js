@@ -1,12 +1,59 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 import "./Secciones.css";
 import VideoWraper from "../components/VideoWraper";
 import { useModal } from "../hooks/useModal";
 import ModalVideos from "../components/ModalVideos";
+import useWindowDimensions from "./../hooks/useWindowDimensions";
+import { useLocation } from "react-router-dom";
 
-export default function SalaArana() {
+export default function SalaArana({
+  scrollToCol,
+  scrollToArch,
+  scrollToRepre,
+  scrollToRosas,
+  resetScroll,
+}) {
   const [isOpenModalYT, openModalYT, closeModalYT] = useModal(false);
   const [linkVideo, setLinkVideo] = useState();
+  const Col = useRef();
+  const Arch = useRef();
+  const Repre = useRef();
+  const Rosas = useRef();
+  scrollToCol && Col.current.scrollIntoView({ behavior: "smooth" });
+  scrollToArch && Arch.current.scrollIntoView({ behavior: "smooth" });
+  scrollToRepre && Repre.current.scrollIntoView({ behavior: "smooth" });
+  scrollToRosas && Rosas.current.scrollIntoView({ behavior: "smooth" });
+  let windowDimensions = useWindowDimensions();
+
+  let location = useLocation();
+
+  useLayoutEffect(() => {
+    if (location.pathname === "/salaAranaColumnas") {
+      setTimeout(() => {
+        Col.current.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+    if (location.pathname === "/salaAranaArchivo") {
+      setTimeout(() => {
+        Arch.current.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+    if (location.pathname === "/salaAranaSalaRosas") {
+      setTimeout(() => {
+        Rosas.current.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+    if (location.pathname === "/salaAranaPatioRosas") {
+      setTimeout(() => {
+        Rosas.current.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+    if (location.pathname === "/salaAranaRepresentantes") {
+      setTimeout(() => {
+        Repre.current.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+  }, []);
 
   const abrirVideo = (linkTo) => {
     openModalYT();
@@ -33,13 +80,17 @@ export default function SalaArana() {
         </p>
         <img
           className="seccion__imagen1"
-          src="https://visita-cantada.s3.sa-east-1.amazonaws.com/img/ara%C3%B1a2.jpg"
+          src={
+            windowDimensions.width > 600
+              ? "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/ara%C3%B1a2.jpg"
+              : "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/ara%C3%B1a_m.png"
+          }
           alt="imagen de la sala de la araña"
         ></img>
         <div className="seccion__containerVideos">
           <div
             onClick={() =>
-              abrirVideo("https://www.youtube.com/embed/HHPUZknrbfY")
+              abrirVideo("https://www.youtube.com/embed/lpCY236raq4")
             }
           >
             <VideoWraper
@@ -49,22 +100,34 @@ export default function SalaArana() {
               clase={"videoHome videoHome--salaArana1"}
               titulo={"Lidia Borda"}
               subtitulo={"No te apures Carablanca"}
+              poster={
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/LidiaBlur1.jpg"
+              }
               linkTo="#"
-              /* linkTo={"https://www.youtube.com/watch?v=gA6WGYQWrKc"} */
             ></VideoWraper>
           </div>
-
-          <VideoWraper
-            source1={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Lidia_enUnCorralon_loop.mp4"
+          <div
+            onClick={() =>
+              abrirVideo("https://www.youtube.com/embed/FyLV-t_KLBc")
             }
-            clase={"videoHome videoHome--salaArana2"}
-            titulo={"Lidia Borda"}
-            subtitulo={"En un corralon de Barracas"}
-            linkTo={"#"}
-          ></VideoWraper>
+          >
+            <VideoWraper
+              source1={
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Lidia_enUnCorralon_loop.mp4"
+              }
+              clase={"videoHome videoHome--salaArana2"}
+              titulo={"Lidia Borda"}
+              subtitulo={"En un corralon de Barracas"}
+              poster={
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/LidiaBlur1.jpg"
+              }
+              linkTo={"#"}
+            ></VideoWraper>
+          </div>
           <div className="columnas">
-            <h2 className="seccion__titulo--columnas">Sala Columnas</h2>
+            <h2 className="seccion__titulo--columnas" ref={Col}>
+              Sala Columnas
+            </h2>
             <p className="seccion__parrafo--columnas">
               Por estos espacios, pasaron múltiples instituciones del estado
               como el Concejo Deliberante de la Ciudad de Buenos Aires y las
@@ -74,24 +137,37 @@ export default function SalaArana() {
             <img
               className="seccion__imagen2"
               src={
-                "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/columnas.png"
+                windowDimensions > 600
+                  ? "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/columnas.png"
+                  : "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/columnas_m.png"
               }
               alt={"Sala columnas"}
             ></img>
           </div>
-          <VideoWraper
-            source1={
-              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Noelia_cuestaAbajo_loop.mp4"
+          <div
+            onClick={() =>
+              abrirVideo("https://www.youtube.com/embed/qss0UfAPLcU")
             }
-            clase={"videoHome videoHome--salaArana3"}
-            titulo={"Noelia Moncada"}
-            subtitulo={"Cuesta abajo"}
-            linkTo={"#"}
-          ></VideoWraper>
+          >
+            <VideoWraper
+              source1={
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Noelia_cuestaAbajo_loop.mp4"
+              }
+              clase={"videoHome videoHome--salaArana3"}
+              titulo={"Noelia Moncada"}
+              subtitulo={"Cuesta abajo"}
+              poster={
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/MoncadaBlur.jpg"
+              }
+              linkTo={"#"}
+            ></VideoWraper>
+          </div>
         </div>
       </div>
       <div className="Archivo">
-        <h2 className="Archivo__titulo">Sala del archivo</h2>
+        <h2 className="Archivo__titulo" ref={Arch}>
+          Sala del archivo
+        </h2>
         <p className="Archivo__parrafo">
           Luego de la Independencia, las casas redituantes albergaron las
           primeras sedes de varias instituciones históricas del país como: el
@@ -108,19 +184,30 @@ export default function SalaArana() {
           Departamento Topográfico, institución que se encargó la importante
           misión de desarrollar los diferentes mapas del país y sus provincias.
         </p>
-        <VideoWraper
-          source1={
-            "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/JuanVilla_huahuais_loop.mp4"
+        <div
+          onClick={() =>
+            abrirVideo("https://www.youtube.com/embed/8zzu-N-WNlg")
           }
-          clase={"videoHome videoHome--archivo"}
-          titulo={"Juan Villareal"}
-          subtitulo={"Huahuais"}
-          linkTo={"#"}
-        ></VideoWraper>
+        >
+          <VideoWraper
+            source1={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/JuanVilla_huahuais_loop.mp4"
+            }
+            clase={"videoHome videoHome--archivo"}
+            titulo={"Juan Villareal"}
+            subtitulo={"Huahuais"}
+            poster={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/VillarBlur.jpg"
+            }
+            linkTo={"#"}
+          ></VideoWraper>
+        </div>
       </div>
       <div className="Patio">
         <div className="Patio__cajaTexto">
-          <h2 className="Patio__titulo">Patio de Representantes</h2>
+          <h2 className="Patio__titulo" ref={Repre}>
+            Patio de Representantes
+          </h2>
           <p className="Patio__parrafo">
             Durante el virreinato, a fines del siglo XVIII, el virrey Vértiz
             mandó a construir en este lugar más de 30 calabozos subterráneos
@@ -134,15 +221,59 @@ export default function SalaArana() {
             Aires, Manuel Vicente Maza.
           </p>
         </div>
-        <VideoWraper
-          source1={
-            "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Otml_mariposa_loop.mp4"
+        <div
+          onClick={() =>
+            abrirVideo("https://www.youtube.com/embed/cWDpBZKB3n4")
           }
-          clase={"videoHome videoHome--patio"}
-          titulo={"OT Manzana de las Luces"}
-          subtitulo={"La mariposa"}
-          linkTo={"#"}
-        ></VideoWraper>
+        >
+          <VideoWraper
+            source1={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Otml_mariposa_loop.mp4"
+            }
+            clase={"videoHome videoHome--patio"}
+            titulo={"OT Manzana de las Luces"}
+            subtitulo={"La mariposa"}
+            poster={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/OtmlBlur.jpg"
+            }
+            linkTo={"#"}
+          ></VideoWraper>
+        </div>
+      </div>
+      <div className="Rosas">
+        <h2 className="Rosas__titulo" ref={Rosas}>
+          Patio Rosas
+        </h2>
+        <p className="Rosas__parrafo">
+          Este patio de la Manzana de las Luces también formó parte de las casas
+          redituantes construidas por del virrey Vértiz. Más tarde, se convirtió
+          en la entrada por la cual Juan Manuel de Rosas llegaba a la Sala de
+          Representantes. Según descubrimientos arqueológicos recientes, se pudo
+          conocer que en este patio funcionó un importante sistema de desagües
+          pluviales del siglo XIX.
+          <br></br>
+          <br></br>
+          Con los años, se convirtió en el sitio para aulas y oficinas de la
+          Facultad de Arquitectura de la Universidad de Buenos Aires.
+        </p>
+        <div
+          onClick={() =>
+            abrirVideo("https://www.youtube.com/embed/O3gC_uA6Lw8")
+          }
+        >
+          <VideoWraper
+            source1={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/Payadores_loop.mp4"
+            }
+            clase={"videoHome videoHome--rosas"}
+            titulo={"Payadores y Raperos"}
+            subtitulo={""}
+            poster={
+              "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/PayadoresBlur.jpg"
+            }
+            linkTo={"#"}
+          ></VideoWraper>
+        </div>
       </div>
     </>
   );

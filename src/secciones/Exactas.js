@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { useModal } from "../hooks/useModal";
 import VideoWraper from "../components/VideoWraper";
 import ModalVideos from "../components/ModalVideos";
+import useWindowDimensions from "./../hooks/useWindowDimensions";
+
 import "./Exactas.css";
 export default function Exactas() {
   const [isOpenModalYT, openModalYT, closeModalYT] = useModal(false);
   const [linkVideo, setLinkVideo] = useState();
+  let windowDimensions = useWindowDimensions();
 
   const abrirVideo = (linkTo) => {
     openModalYT();
@@ -46,12 +49,6 @@ export default function Exactas() {
           <br></br>
           <br></br>
         </p>
-        <img
-          className="exactas__imagen1"
-          src={
-            "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/exactas.png"
-          }
-        ></img>
         <div className="exactas__containerVideos">
           <div
             onClick={() =>
@@ -66,12 +63,20 @@ export default function Exactas() {
               titulo={"Opera Queer"}
               subtitulo={"Carmen"}
               poster={
-                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/GuapoBlur.jpg"
+                "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/OperaBlur.jpg"
               }
               linkTo="#"
             ></VideoWraper>
           </div>
         </div>
+        <img
+          className="exactas__imagen1"
+          src={
+            windowDimensions.width > 600
+              ? "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/exactas.png"
+              : "https://visita-cantada.s3.sa-east-1.amazonaws.com/img/exactas_m.png"
+          }
+        ></img>
       </div>
     </>
   );

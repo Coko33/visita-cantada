@@ -7,16 +7,20 @@ import "@animxyz/core";
 import { XyzTransition } from "@animxyz/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export default function Intro() {
   const navigate = useNavigate();
+  let windowDimensions = useWindowDimensions();
 
   return (
     <>
       <div className="intro__videoContainer">
         <VideoWraper
           source1={
-            "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/loopIntro-sr.mp4"
+            windowDimensions.width > 599
+              ? "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/loopIntro-alta.mp4"
+              : "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/loopIntro-baja.mp4"
           }
           source2=""
           clase={"videoIntro"}
