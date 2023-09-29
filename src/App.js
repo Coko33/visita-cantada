@@ -19,7 +19,7 @@ import Exactas from "./secciones/Exactas";
 import Laboratorio from "./secciones/Laboratorio";
 import PaginaConstruccion from "./secciones/PaginaContruccion";
 import { useState } from "react";
-import Dimensions from "./components/Dimensions";
+//import Dimensions from "./components/Dimensions";
 import Representantes from "./secciones/Representantes";
 function App() {
   /*
@@ -47,9 +47,10 @@ function App() {
     setScrollToGB(false);
     setScrollToCol(false);
   };
+
+  /*<Dimensions></Dimensions>*/
   return (
     <>
-      {/* <Dimensions></Dimensions> */}
       <HashRouter>
         <Routes>
           <Route exact path="/" element={<Intro />}></Route>

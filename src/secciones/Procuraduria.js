@@ -44,7 +44,7 @@ export default function Procuraduria({ scrollToGA, scrollToGB, resetScroll }) {
             linkVideo={linkVideo}
           ></ModalVideos>
         )}
-        <h1 className="seccion__titulo">Patio de la Procuraduria</h1>
+        <h1 className="seccion__titulo">Patio de la Procuraduría</h1>
         <p className="seccion__parrafo seccion__parrafo--PP">
           Construido en 1730, los planos de este sitio se adjudican al
           arquitecto jesuita Juan Bautista Prímoli. Fue la sede administrativa
@@ -96,7 +96,7 @@ export default function Procuraduria({ scrollToGA, scrollToGB, resetScroll }) {
 
         <div className="seccion__galeriasAltas">
           <h2 className="seccion__titulo--gAltas" ref={GA}>
-            Galerias Altas
+            Galerías Altas
           </h2>
           <p className="seccion__parrafo gAltas">
             En el primer piso de Procuraduría, funcionó el Museo Público (hoy,
@@ -156,7 +156,7 @@ export default function Procuraduria({ scrollToGA, scrollToGB, resetScroll }) {
                 "https://visita-cantada.s3.sa-east-1.amazonaws.com/videos/SofiaTorres_loop.mp4"
               }
               clase={"videoHome videoHome--procu4"}
-              titulo={"Sofia Torres Kosiba"}
+              titulo={"Sofía Torres Kosiba"}
               subtitulo={"Un cancionero luminoso"}
               poster={
                 "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/KosibaBlur.jpg"
@@ -168,7 +168,7 @@ export default function Procuraduria({ scrollToGA, scrollToGB, resetScroll }) {
         </div>
         <div className="seccion__galeriasBajas--titulo">
           <h2 className="seccion__titulo--gBajas" ref={GB}>
-            Galerias Bajas
+            Galerías Bajas
           </h2>
         </div>
         <div className="seccion__galeriasBajas--parrafo">

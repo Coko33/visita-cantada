@@ -72,9 +72,10 @@ export default function SalaArana({
         )}
         <h1 className="seccion__titulo">Sala Araña</h1>
         <p className="seccion__parrafo">
-          Estas salas fueron parte de un conjunto de viviendas de renta que el
-          Virrey Juan José de Vértiz y Salcedo encargó construir al arquitecto
-          José Claudio de Sáa y Farías. Se las llamo casas redituantes.
+          Las salas Araña y Columnas fueron parte de un conjunto de viviendas de
+          renta que el Virrey Juan José de Vértiz y Salcedo encargó construir al
+          arquitecto José Claudio de Sáa y Farías. Se las llamó casas
+          redituantes.
           <br></br>
           <br></br>
         </p>

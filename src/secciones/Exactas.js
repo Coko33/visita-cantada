@@ -33,14 +33,14 @@ export default function Exactas() {
           una clase magistral en su aula magna.
           <br></br>
           <br></br>
-          El 29 de julio 1966, la policía del gobierno dictatorial que derrocó
-          al presidente Arturo Illia irrumpió en la ​Facultad. Estudiantes,
-          graduadxs y docentes, que ocupaban pacíficamente las aulas en defensa
-          de la autonomía universitaria, fueron víctimas de gases lacrimógenos,
-          golpes al por mayor, cientos de detenciones, destrucción por doquier y
-          el consiguiente desmantelamiento de la ciencia y la universidad
-          argentina. Este incidente se conoce como La Noche de los Bastones
-          Largos.
+          El 29 de julio de 1966, la policía del gobierno dictatorial que
+          derrocó al presidente Arturo Illia irrumpió en la ​Facultad.
+          Estudiantes, graduadxs y docentes, que ocupaban pacíficamente las
+          aulas en defensa de la autonomía universitaria, fueron víctimas de
+          gases lacrimógenos, golpes al por mayor, cientos de detenciones,
+          destrucción por doquier y el consiguiente desmantelamiento de la
+          ciencia y la universidad argentina. Este incidente se conoce como La
+          Noche de los Bastones Largos.
           <br></br>
           <br></br>
           En 1972, las autoridades a cargo decidieron demoler el edificio por no

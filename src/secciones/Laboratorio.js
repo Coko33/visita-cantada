@@ -36,10 +36,10 @@ export default function Laboratorio() {
         ></img>
         <h1 className="Laboratorio__titulo">Laboratorio</h1>
         <p className="Laboratorio__parrafo">
-          Uno de los lugares más extraños de la Manzana de las Luces. Esta
-          construcción, que perteneció a la Facultad de Arquitectura, según nos
-          cuentan los datos recopilados hasta el momento, permiten sostener que
-          allí se revelaban planos y copias heliográficas.
+          Uno de los lugares más extraños de la Manzana de las Luces, y que
+          perteneció a la Facultad de Arquitectura. Los datos recopilados hasta
+          el momento permiten sostener que allí se revelaban planos y copias
+          heliográficas.
         </p>
         <div className="Laboratorio__containerVideos">
           <div
@@ -71,7 +71,7 @@ export default function Laboratorio() {
               }
               clase={"videoHome videoHome--Laboratorio2"}
               titulo={"Electrochongo"}
-              subtitulo={"Te conozco mas sin ropa"}
+              subtitulo={"Te conozco más sin ropa"}
               poster={
                 "https://visita-cantada.s3.sa-east-1.amazonaws.com/blurs/EchBlur1.jpg"
               }

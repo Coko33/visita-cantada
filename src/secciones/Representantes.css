@@ -2,7 +2,7 @@
   position: relative;
   left: 12.5%;
   width: 76%;
-  height: 400px;
+  height: 1000px;
 }
 
 .representantes__titulo {
@@ -60,11 +60,21 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 1440px) {
+  .representantes__containerVideos {
+    position: relative;
+  }
+  .videoHome--representantes {
+    position: relative;
+    top:0;
+  }
+}
+
 @media (max-width: 600px) { 
   .representantes {
     width: calc(100vw - 40px);
     left: 20px;
-    height: 800px;
+    height: 1000px;
   }
   .representantes__titulo {
     font-size: 30px;
