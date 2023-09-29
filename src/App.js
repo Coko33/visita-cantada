@@ -21,6 +21,7 @@ import PaginaConstruccion from "./secciones/PaginaContruccion";
 import { useState } from "react";
 //import Dimensions from "./components/Dimensions";
 import Representantes from "./secciones/Representantes";
+import Tuneles from "./secciones/Tuneles";
 function App() {
   /*
   scrollToCol,
@@ -127,6 +128,17 @@ function App() {
                 <Header />
                 <Nav />
                 <Laboratorio />
+              </>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/tuneles"
+            element={
+              <>
+                <Header />
+                <Nav />
+                <Tuneles />
               </>
             }
           ></Route>

@@ -178,6 +178,11 @@ export default function Nav({ manejarScroll }) {
                   <div className="navBar__textContainer">Laboratorio</div>
                 </NavLink>
               </li>
+              <li onClick={toggleMenu} className="navBar__menuItem">
+                <NavLink to="/tuneles">
+                  <div className="navBar__textContainer">Túneles</div>
+                </NavLink>
+              </li>
             </ul>
           </div>
         )}

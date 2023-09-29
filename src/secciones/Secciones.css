@@ -1,10 +1,10 @@
-
 .seccion {
   position: relative;
   margin-bottom: 300px;
 }
 .seccion__titulo,
-.seccion__titulo--gAltas, .seccion__titulo--gBajas {
+.seccion__titulo--gAltas,
+.seccion__titulo--gBajas {
   display: inline-block;
   margin: 120px 0 20px 0;
   font-family: BrlwSC_Bold;
@@ -63,7 +63,7 @@
   margin-top: 0 !important;
 }
 .seccion__parrafo.gAltas {
-  top:20px;
+  top: 20px;
   left: 0;
   width: 66.6%;
 }
@@ -83,11 +83,15 @@
 }
 .seccion__galeriasBajas--titulo {
   position: relative;
+  top: 100px;
   width: 66.6%;
   left: calc(12.5% + 10px);
-  position: relative;
   font-size: 30px;
   margin: 0;
+}
+.seccion__galeriasBajas--parrafo {
+  position: relative;
+  top: 130px;
 }
 .seccion__parrafo.gBajas {
   width: 500px;
@@ -328,8 +332,6 @@
   left: 50%;
 }
 
-
-
 @media (max-width: 1440px) {
   .seccion {
     width: calc(100vw - 40px);
@@ -339,7 +341,7 @@
     font-size: 30px;
     margin: 0;
     left: 0;
-  } 
+  }
   .seccion__parrafo.seccion__parrafo--PP {
     top: 20px;
     left: 0;
@@ -363,7 +365,7 @@
     top: 80px;
     bottom: inherit;
   }
-  .seccion__titulo--gAltas{
+  .seccion__titulo--gAltas {
     font-size: 30px;
     margin: 0;
     left: 0;
@@ -377,13 +379,13 @@
   }
   .videoHome--procu2 {
     position: relative;
-    top:20px;
+    top: 20px;
     width: 80%;
   }
   .videoHome--procu3 {
     position: relative;
     float: right;
-    top:-20px;
+    top: -20px;
     left: auto;
     right: 0;
     width: 80%;
@@ -400,7 +402,7 @@
     position: relative;
     width: max-content;
     top: 60px;
-    left:0;
+    left: 0;
   }
 
   .seccion__titulo--gBajas {
@@ -420,7 +422,7 @@
     border-width: 0 0 4px;
     border-style: solid;
   }
-  .seccion__parrafo.gBajas{
+  .seccion__parrafo.gBajas {
     position: relative;
     top: 80px;
     left: 0;
@@ -431,14 +433,17 @@
 }
 
 @media (max-width: 600px) {
-  .seccion__parrafo, .seccion__parrafo--columnas, .Archivo__parrafo  {
+  .seccion__parrafo,
+  .seccion__parrafo--columnas,
+  .Archivo__parrafo {
     width: 100%;
     left: 0;
     top: 20px;
     font-size: 14px;
     line-height: 16px;
   }
-  .Archivo__titulo, .seccion__titulo--columnas {
+  .Archivo__titulo,
+  .seccion__titulo--columnas {
     position: relative;
     font-size: 30px;
     color: #fff;
@@ -447,7 +452,7 @@
     left: 0;
   }
   .seccion__imagen1 {
-    top:10px;
+    top: 10px;
   }
   .videoHome--procu1 {
     width: 80%;
@@ -460,7 +465,7 @@
     left: 10%;
     top: -50px;
   }
-  
+
   .videoHome--salaArana1 {
     float: right;
     left: auto;
@@ -541,20 +546,20 @@
     font-size: 14px;
     line-height: 16px;
     width: 100%;
-    margin:0;
+    margin: 0;
     top: 20px;
     left: 0;
   }
   .seccion__galeriasAltas {
-    top: -50px;  
+    top: -50px;
   }
-  .seccion__galeriasBajas--titulo{
-    top:-50px;
+  .seccion__galeriasBajas--titulo {
+    top: -50px;
   }
-  .seccion__parrafo.gBajas{
-    top:-30px;
+  .seccion__parrafo.gBajas {
+    top: -30px;
   }
-  .Rosas{
+  .Rosas {
     width: calc(100vw - 40px);
     left: 20px;
     height: 500px;
@@ -565,7 +570,7 @@
     font-size: 14px;
     line-height: 16px;
     width: 100%;
-    margin:0;
+    margin: 0;
     top: 20px;
     left: 0;
   }
@@ -598,7 +603,7 @@
   .seccion__parrafo.seccion__parrafo--PP {
     width: 50%;
   }
-  .seccion__parrafo{
+  .seccion__parrafo {
     left: 0;
     top: 20px;
     width: 500px;
@@ -612,7 +617,7 @@
   .videoHome--salaArana2 {
     width: 80%;
   }
-  .videoHome--salaArana3{
+  .videoHome--salaArana3 {
     width: 80%;
     top: 100px;
     left: -200px;
@@ -620,8 +625,8 @@
   .videoHome--procu1 {
     width: 100%;
     top: 50px;
-   left: 150px;
-   float:right;
+    left: 150px;
+    float: right;
   }
   .seccion__imagen1 {
     width: 50%;
@@ -634,13 +639,13 @@
   }
   .videoHome--procu2 {
     position: relative;
-    top:20px;
+    top: 20px;
     width: 80%;
   }
   .videoHome--procu3 {
     position: relative;
     float: right;
-    top:0px;
+    top: 0px;
     left: auto;
     right: 0;
     width: 80%;
@@ -648,12 +653,12 @@
   .videoHome--procu4 {
     position: relative;
     float: right;
-    top:-300px;
+    top: -300px;
     left: -400px;
     width: 80%;
   }
   .seccion__galeriasBajas--titulo {
-    top:150px;
+    top: 150px;
   }
   .seccion__galeriasBajas--parrafo {
     width: 400px;
@@ -680,7 +685,3 @@
     }
   }
 }
-
-
-
-
